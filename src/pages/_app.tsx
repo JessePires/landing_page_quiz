@@ -1,6 +1,7 @@
 import React from "react";
 import {AppProps} from '../../node_modules/next/app';
 import { ThemeProvider } from "styled-components";
+import 'normalize.css/normalize.css';
 
 // STYLE
 import GlobalStyle from '../styles/global';
