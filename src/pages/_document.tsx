@@ -1,28 +1,25 @@
 import React from 'react';
 import Document, { DocumentContext, Head, Html, Main, NextScript } from '../../node_modules/next/document';
 import { ServerStyleSheet } from 'styled-components';
-import { DocumentInitialProps,  } from '../../node_modules/next/document';
+import { DocumentInitialProps  } from '../../node_modules/next/document';
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps>{
-    const sheet = new ServerStyleSheet()
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
     const originalRenderPage = ctx.renderPage
 
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        })
+    // Run the React rendering logic synchronously
+    ctx.renderPage = () =>
+      originalRenderPage({
+        // Useful for wrapping the whole react tree
+        enhanceApp: (App) => App,
+        // Useful for wrapping in a per-page basis
+        enhanceComponent: (Component) => Component,
+      })
 
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: [initialProps.styles, sheet.getStyleElement()],
-      }
-    } finally {
-      sheet.seal()
-    }
+    // Run the parent `getInitialProps`, it now includes the custom `renderPage`
+    const initialProps = await Document.getInitialProps(ctx)
+
+    return initialProps
   }
 
   // Changing global font style
@@ -31,16 +28,11 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet='utf-8' />
-
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:400,500,700" rel="stylesheet" />
         </Head>
 
         <body>
           <Main />
-
           <NextScript />
-
-
         </body>
       </Html>
     );
