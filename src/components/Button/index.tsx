@@ -5,8 +5,10 @@ interface ButtonProps {
   children: React.ReactNode
 }
 
-const Button: React.FC = ({ children }: ButtonProps) => (
-  <StyledButton type="button">{children}</StyledButton>
+const Button: React.FC = ({ children, ...props }: ButtonProps) => (
+  <StyledButton type="button" {...props}>
+    {children}
+  </StyledButton>
 )
 
 export default Button

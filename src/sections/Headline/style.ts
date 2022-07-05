@@ -6,6 +6,9 @@ import LogoImage from '../../assets/logo.png'
 import Arrow from '../../assets/seta_enrolada.svg'
 import Line from '../../assets/minhoca.svg'
 
+// Components
+import { Button } from '../../components/index'
+
 export const Section = styled.section`
   height: 839px;
   background-image: url('${Background.src}');
@@ -13,11 +16,16 @@ export const Section = styled.section`
   background-size: cover;
   background-position: center bottom;
 
-  padding: 30px 100px;
+  padding: 10px 100px;
+
+  @media (max-width: 1150px) {
+    padding: 10px 30px;
+  }
 `
 
 export const Header = styled.header`
   justify-content: space-between;
+  align-items: center;
   display: flex;
 `
 
@@ -48,51 +56,55 @@ export const Body = styled.div`
 
 export const LeftSide = styled.div`
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: fit-content;
+
+  @media (max-width: 1150px) {
+    display: none;
+  }
 `
 
 export const MockupContainer = styled.div`
   position: relative;
   display: flex;
-  justify-content: flex-start;
 `
 
 export const RightSide = styled.div`
   width: 50%;
   position: relative;
+
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
 `
 
 export const WelcomeText = styled.p`
   color: white;
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 21px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 
 export const Title = styled.p`
   color: white;
-  line-height: 56px;
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  @media (max-width: 510px) {
+    font-size: 2.5rem;
+  }
 `
 
 export const Description = styled.p`
-  line-height: 30px;
   color: white;
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 
 export const ArrowEffect = styled.img.attrs({
   src: Arrow.src,
   draggable: false,
 })`
-  height: 45px;
+  height: 50px;
 `
 
 export const LineEffect = styled.img.attrs({
@@ -100,4 +112,14 @@ export const LineEffect = styled.img.attrs({
   draggable: false,
 })`
   position: absolute;
+
+  @media (max-width: 1150px) {
+    display: none;
+  }
+`
+
+export const StyledButton = styled(Button)`
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
 `

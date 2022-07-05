@@ -13,13 +13,10 @@ import {
   WelcomeText,
   Title,
   Description,
-  ArrowEffect,
   MockupContainer,
   LineEffect,
+  StyledButton,
 } from './style'
-
-// Components
-import { Button } from '../../components/index'
 
 const Headline: React.FC = () => (
   <Section>
@@ -40,39 +37,37 @@ const Headline: React.FC = () => (
         <MockupContainer>
           <div style={{ zIndex: 2 }}>
             <IPhone7 width={300} color="black">
-              {/* <iframe
-              title="showcase"
-              src="https://example.com"
-              style={{
-                width: '100%',
-                height: '100%',
-                margin: 0,
-              }}
-            /> */}
+              <iframe
+                title="showcase"
+                src="https://example.com"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  margin: 0,
+                }}
+              />
             </IPhone7>
           </div>
           <div
             style={{
-              position: 'absolute',
-              transform: 'translateY(22px) translateX(114px) rotate(19deg);',
+              transform: 'translateX(-194px) rotate(19deg)',
               zIndex: 1,
             }}
           >
             <IPhone7 width={280} color="black">
-              {/* <iframe
-              title="showcase"
-              src="https://example.com"
-              style={{
-                width: '100%',
-                height: '100%',
-                margin: 0,
-              }}
-            /> */}
+              <iframe
+                title="showcase"
+                src="https://example.com"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  margin: 0,
+                }}
+              />
             </IPhone7>
           </div>
         </MockupContainer>
-
-        <ArrowEffect />
+        {/* <ArrowEffect /> */}
       </LeftSide>
       <RightSide>
         <WelcomeText>Seja bem-vindo ao projeto do Quiz Gamificado.</WelcomeText>
@@ -84,7 +79,7 @@ const Headline: React.FC = () => (
           sed rutrum donec.
         </Description>
 
-        <Button>SOBRE NÓS</Button>
+        <StyledButton>SOBRE NÓS</StyledButton>
         <LineEffect />
       </RightSide>
     </Body>
