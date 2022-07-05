@@ -56,15 +56,11 @@ export const Body = styled.div`
 
 export const LeftSide = styled.div`
   width: 50%;
+  position: relative;
 
   @media (max-width: 1150px) {
     display: none;
   }
-`
-
-export const MockupContainer = styled.div`
-  position: relative;
-  display: flex;
 `
 
 export const RightSide = styled.div`

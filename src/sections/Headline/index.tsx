@@ -1,5 +1,4 @@
 import React from 'react'
-import { IPhone7 } from 'react-device-mockups'
 
 import {
   Section,
@@ -13,10 +12,11 @@ import {
   WelcomeText,
   Title,
   Description,
-  MockupContainer,
   LineEffect,
   StyledButton,
 } from './style'
+
+import { Smartphone } from '../../components'
 
 const Headline: React.FC = () => (
   <Section>
@@ -34,39 +34,17 @@ const Headline: React.FC = () => (
 
     <Body>
       <LeftSide>
-        <MockupContainer>
-          <div style={{ zIndex: 2 }}>
-            <IPhone7 width={300} color="black">
-              <iframe
-                title="showcase"
-                src="https://example.com"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  margin: 0,
-                }}
-              />
-            </IPhone7>
-          </div>
-          <div
-            style={{
-              transform: 'translateX(-194px) rotate(19deg)',
-              zIndex: 1,
-            }}
-          >
-            <IPhone7 width={280} color="black">
-              <iframe
-                title="showcase"
-                src="https://example.com"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  margin: 0,
-                }}
-              />
-            </IPhone7>
-          </div>
-        </MockupContainer>
+        <Smartphone width={320} height={640} style={{ zIndex: 2 }} />
+        <Smartphone
+          width={300}
+          height={600}
+          style={{
+            transform: 'rotateZ(19deg)',
+            position: 'absolute',
+            top: '16px',
+            left: '115px',
+          }}
+        />
         {/* <ArrowEffect /> */}
       </LeftSide>
       <RightSide>
