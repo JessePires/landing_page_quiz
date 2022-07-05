@@ -1,15 +1,30 @@
 <svg width="1440" height="839" viewBox="0 0 1440 839" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M-2058 918.201L-1863.67 895.527C-1669.33 872.853 -1280.67 827.506 -892 710.9C-503.333 594.293 -450.667 354.153 -62 399.5C314.5 515.5 863.5 830.5 1474 838.5C1862.67 1000.45 2217.33 1151.41 2411.67 1177.33L2606 1200V-60H2411.67C2217.33 -60 1828.67 -60 1440 -60C1051.33 -60 662.667 -60 274 -60C-114.667 -60 -503.333 -60 -892 -60C-1280.67 -60 -1669.33 -60 -1863.67 -60H-2058V918.201Z" fill="url(#paint0_linear_101_44)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-2282 898.201L-2087.67 875.527C-1893.33 852.853 -1463 850.5 -1116 660.5C-769 470.5 -363 470.5 -363 470.5C256 452.5 659 721.5 1262 800C1865 878.5 1993.33 872.288 2187.67 898.201L2382 920.874V-80H2187.67C1993.33 -80 1604.67 -80 1216 -80C827.333 -80 438.667 -80 50 -80C-338.667 -80 -727.333 -80 -1116 -80C-1504.67 -80 -1893.33 -80 -2087.67 -80H-2282V898.201Z" fill="url(#paint0_linear_101_44)"/>
+<mask id="mask0_101_44" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2282" y="-80" width="4664" height="1001">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-2282 898.201L-2087.67 875.527C-1893.33 852.853 -1463 850.5 -1116 660.5C-769 470.5 -363 470.5 -363 470.5C256 452.5 659 721.5 1262 800C1865 878.5 1993.33 872.288 2187.67 898.201L2382 920.874V-80H2187.67C1993.33 -80 1604.67 -80 1216 -80C827.333 -80 438.667 -80 50 -80C-338.667 -80 -727.333 -80 -1116 -80C-1504.67 -80 -1893.33 -80 -2087.67 -80H-2282V898.201Z" fill="url(#paint1_linear_101_44)"/>
+</mask>
+<g mask="url(#mask0_101_44)">
 <g style="mix-blend-mode:overlay" opacity="0.02">
-<rect x="1511" y="839" width="1554" height="929" transform="rotate(-180 1511 839)" fill="url(#pattern0)"/>
+<rect x="1444" y="855" width="1554" height="929" transform="rotate(-180 1444 855)" fill="url(#pattern0)"/>
 </g>
-<path opacity="0.15" d="M488 964.5C1023.34 823.091 1279.42 508.09 1722 375" stroke="white" stroke-width="2" stroke-dasharray="8 8"/>
-<path opacity="0.15" d="M-381 569.5C154.345 428.091 410.415 113.09 853 -20" stroke="white" stroke-width="2" stroke-dasharray="8 8"/>
+<g style="mix-blend-mode:overlay" opacity="0.02">
+<rect width="1554" height="929" transform="matrix(1 0 0 -1 1437 884)" fill="url(#pattern1)"/>
+</g>
+<path opacity="0.15" d="M421 980.5C956.345 839.091 1212.42 524.09 1655 391" stroke="white" stroke-width="2" stroke-dasharray="8 8"/>
+<path opacity="0.15" d="M-448 585.5C87.3446 444.091 343.415 129.09 786 -4" stroke="white" stroke-width="2" stroke-dasharray="8 8"/>
+</g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_101_44" transform="translate(0 -0.672766) scale(0.000249938 0.000418087)"/>
 </pattern>
-<linearGradient id="paint0_linear_101_44" x1="274" y1="-60" x2="274" y2="1200" gradientUnits="userSpaceOnUse">
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_101_44" transform="translate(0 -0.672766) scale(0.000249938 0.000418087)"/>
+</pattern>
+<linearGradient id="paint0_linear_101_44" x1="50" y1="-80" x2="50" y2="920.874" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5733B5"/>
+<stop offset="1" stop-color="#2F137A"/>
+</linearGradient>
+<linearGradient id="paint1_linear_101_44" x1="50" y1="-80" x2="50" y2="920.874" gradientUnits="userSpaceOnUse">
 <stop stop-color="#5733B5"/>
 <stop offset="1" stop-color="#2F137A"/>
 </linearGradient>

@@ -1,7 +1,10 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react'
+import Head from 'next/head'
 
-import LoginIllustration from "../assets/login_illustration.svg";
+import LoginIllustration from '../assets/login_illustration.svg'
+
+// Sections
+import HeadlineSection from '../sections/Headline'
 
 const Home: React.FC = () => (
   <div>
@@ -21,11 +24,8 @@ const Home: React.FC = () => (
       />
     </Head>
 
-    <main>
-      {/* <img src={LoginIllustration} alt="teste" /> */}
-      <h1>Hello Worlda!</h1>
-    </main>
+    <HeadlineSection />
   </div>
-);
+)
 
-export default Home;
+export default Home
