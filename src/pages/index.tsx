@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
-import LoginIllustration from '../assets/login_illustration.svg'
+import 'html5-device-mockups/dist/device-mockups.min.css'
 
 // Sections
 import HeadlineSection from '../sections/Headline'
