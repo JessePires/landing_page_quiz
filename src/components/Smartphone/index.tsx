@@ -1,18 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 
-type SmartphoneProps = {
+interface ContainerProps {
   width: number
   height: number
-  style: React.CSSProperties
-  image: string
 }
 
-export const Container = styled.div`
+type SmartphoneProps = {
+  width?: number
+  height?: number
+  style: React.CSSProperties
+  image?: string
+}
+
+export const Container = styled.div<ContainerProps>`
   position: relative;
   background: #121212;
-  width: ${({ width }: SmartphoneProps) => width}px;
-  height: ${({ height }: SmartphoneProps) => height}px;
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -68,5 +73,11 @@ const Smartphone: React.FC<SmartphoneProps> = ({
     <Screen alt="" src={image} />
   </Container>
 )
+
+Smartphone.defaultProps = {
+  width: 320,
+  height: 640,
+  image: '',
+}
 
 export default Smartphone

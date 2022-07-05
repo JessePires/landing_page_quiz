@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 // Sections
 import HeadlineSection from '../sections/Headline'
+import WhoItIsIndicatedSection from '../sections/WhoItIsIndicated'
 
 const Home: React.FC = () => (
   <div>
@@ -23,6 +24,7 @@ const Home: React.FC = () => (
     </Head>
 
     <HeadlineSection />
+    <WhoItIsIndicatedSection />
   </div>
 )
 

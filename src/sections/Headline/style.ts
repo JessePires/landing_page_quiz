@@ -61,6 +61,7 @@ export const Body = styled.div`
 export const LeftSide = styled.div`
   width: 50%;
   position: relative;
+  height: fit-content;
 
   @media (max-width: 1150px) {
     display: none;
@@ -70,6 +71,7 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   width: 50%;
   position: relative;
+  height: fit-content;
 
   @media (max-width: 1150px) {
     width: 100%;
