@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 // Assets
 import Background from '../../assets/bg_section.svg'
+import Arrow from '../../assets/seta_enrolada.svg'
+
+// Components
+import { Button } from '../../components'
 
 export const Section = styled.section`
   height: 839px;
@@ -10,14 +14,14 @@ export const Section = styled.section`
   background-size: cover;
   background-position: center;
 
-  padding: 100px 100px;
+  padding: 0 100px;
 
   @media (max-width: 1150px) {
     padding: 10px 30px;
   }
 
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 `
@@ -25,6 +29,7 @@ export const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 700;
   font-size: 3rem;
+  text-align: center;
 
   @media (max-width: 510px) {
     font-size: 2.5rem;
@@ -38,4 +43,59 @@ export const Description = styled.p`
 export const RevertColor = styled.span`
   color: ${({ theme }) => theme.colors.purple};
   background: ${({ theme }) => theme.colors.white};
+`
+
+export const Card = styled.div`
+  display: flex;
+  margin: 40px 0;
+  width: 60%;
+`
+
+export const CardImage = styled.div`
+  height: 100%;
+  min-height: 100px;
+  width: 100px;
+  min-width: 100px;
+  background: red;
+`
+
+export const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+`
+
+export const CardTitle = styled(Title)`
+  font-size: 1.2em;
+  text-align: left;
+`
+export const CardDescription = styled.p`
+  color: white;
+  font-size: 1rem;
+`
+export const ArrowEffect = styled.img.attrs({
+  src: Arrow.src,
+  draggable: false,
+})`
+  height: 50px;
+  position: absolute;
+  right: -146px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+`
+
+export const StyledButton = styled(Button)`
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`
+
+export const WrapperButton = styled.div`
+  position: relative;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `
