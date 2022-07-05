@@ -5,6 +5,7 @@ type SmartphoneProps = {
   width: number
   height: number
   style: React.CSSProperties
+  image: string
 }
 
 export const Container = styled.div`
@@ -54,15 +55,17 @@ export const Volume = styled.div`
   background: #121212;
 `
 
-const Smartphone: React.FC<SmartphoneProps> = ({ width, height, ...props }) => (
+const Smartphone: React.FC<SmartphoneProps> = ({
+  width,
+  height,
+  image,
+  ...props
+}) => (
   <Container width={width} height={height} {...props}>
     <Speaker />
     <Power />
     <Volume />
-    <Screen
-      alt=""
-      src="https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-mesa-de-madeira-com-uma-imagem-defocussed-de-um-barco-em-um-lago_1048-3432.jpg?w=2000"
-    />
+    <Screen alt="" src={image} />
   </Container>
 )
 

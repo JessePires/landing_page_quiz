@@ -34,6 +34,10 @@ export const Logo = styled.img.attrs({
   draggable: false,
 })`
   height: 150px;
+
+  @media (max-width: 480px) {
+    height: 100px;
+  }
 `
 
 export const Navbar = styled.nav``
@@ -118,4 +122,10 @@ export const StyledButton = styled(Button)`
   @media (max-width: 1150px) {
     width: 100%;
   }
+`
+
+export const NavbarDocumentationLink = styled(NavbarLink)`
+  background: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.purple};
+  padding: 10px;
 `
