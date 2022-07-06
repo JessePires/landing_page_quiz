@@ -5,6 +5,7 @@ import Head from 'next/head'
 import HeadlineSection from '../sections/Headline'
 import WhoItIsIndicatedSection from '../sections/WhoItIsIndicated'
 import SmartphoneScreenshotsSection from '../sections/SmartphoneScreenshots'
+import DoubtsSection from '../sections/Doubts'
 
 const Home: React.FC = () => (
   <div>
@@ -27,6 +28,7 @@ const Home: React.FC = () => (
     <HeadlineSection />
     <WhoItIsIndicatedSection />
     <SmartphoneScreenshotsSection />
+    <DoubtsSection />
   </div>
 )
 

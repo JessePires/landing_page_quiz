@@ -2,10 +2,26 @@ import styled from 'styled-components'
 
 // Assets
 import Background from '../../assets/bg_section.svg'
-import Arrow from '../../assets/seta_enrolada.svg'
 
 // Components
 import { Button } from '../../components'
+
+export const StyledButton = styled(Button)`
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  svg {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+`
 
 export const Section = styled.section`
   height: 839px;
@@ -33,6 +49,17 @@ export const Title = styled.p`
     font-size: 2.5rem;
   }
 `
+
+export const SubTitle = styled(Title)`
+  font-size: 1.2rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  @media (max-width: 510px) {
+    font-size: 1rem;
+  }
+`
+
 export const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
@@ -44,62 +71,20 @@ export const RevertColor = styled.span`
   font-weight: 700;
 `
 
-export const Card = styled.div`
-  display: flex;
-  margin: 40px 0;
-  width: 60%;
-`
-
-export const CardIcon = styled.div`
-  height: 100%;
-  min-height: 100px;
-  width: 100px;
-  min-width: 100px;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    color: white;
-  }
-`
-
-export const CardContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-`
-
-export const CardTitle = styled(Title)`
-  font-size: 1.2em;
-  text-align: left;
-`
-export const CardDescription = styled.p`
+export const NormalText = styled.p`
   color: white;
   font-size: 1rem;
 `
-export const ArrowEffect = styled.img.attrs({
-  src: Arrow.src,
-  draggable: false,
-})`
-  height: 50px;
-  position: absolute;
-  right: -146px;
 
-  @media (max-width: 600px) {
-    display: none;
-  }
+export const Body = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 `
 
-export const StyledButton = styled(Button)`
-  @media (max-width: 600px) {
-    width: 100%;
-  }
-`
-
-export const WrapperButton = styled.div`
-  position: relative;
-
-  @media (max-width: 600px) {
-    width: 100%;
-  }
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
