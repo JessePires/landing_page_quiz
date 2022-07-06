@@ -80,6 +80,10 @@ export const Body = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `
 
 export const Card = styled.div`
@@ -87,4 +91,10 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 900px) {
+    :last-child {
+      margin-top: 40px;
+    }
+  }
 `
