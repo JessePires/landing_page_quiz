@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // Assets
 import Background from '../../assets/bg_section.svg'
@@ -8,6 +9,7 @@ import Arrow from '../../assets/seta_enrolada.svg'
 import { Button } from '../../components'
 
 export const Section = styled.section`
+  overflow-x: hidden;
   background-image: url('${Background.src}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +47,7 @@ export const RevertColor = styled.span`
   font-weight: 700;
 `
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   display: flex;
   margin: 40px 0;
   width: 60%;
@@ -96,7 +98,7 @@ export const StyledButton = styled(Button)`
   }
 `
 
-export const WrapperButton = styled.div`
+export const WrapperButton = styled(motion.div)`
   position: relative;
 
   @media (max-width: 600px) {

@@ -28,7 +28,17 @@ const SmartphoneScreenshots: React.FC = () => {
         </Description>
       )}
 
-      <Body>
+      <Body
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 1.3 },
+        }}
+        viewport={{
+          once: false,
+        }}
+        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+      >
         <SliderSmartphone width={310} height={600} />
       </Body>
     </Section>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // Assets
 import Background from '../../assets/bg_header.png'
@@ -10,7 +11,8 @@ import Line from '../../assets/minhoca.svg'
 import { Button } from '../../components/index'
 
 export const Section = styled.section`
-  height: 839px;
+  overflow-x: hidden;
+  min-height: 839px;
   background-image: url('${Background.src}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +60,7 @@ export const Body = styled.div`
   width: 100%;
 `
 
-export const LeftSide = styled.div`
+export const LeftSide = styled(motion.div)`
   width: 50%;
   position: relative;
   height: fit-content;
@@ -68,7 +70,7 @@ export const LeftSide = styled.div`
   }
 `
 
-export const RightSide = styled.div`
+export const RightSide = styled(motion.div)`
   width: 50%;
   position: relative;
   height: fit-content;

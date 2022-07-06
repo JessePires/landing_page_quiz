@@ -21,7 +21,18 @@ const Doubts: React.FC = () => (
 
     <SubTitle>Quer utilizar este sistema em sua escola/universidade?</SubTitle>
     <Body>
-      <Card>
+      <Card
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.8 },
+        }}
+        viewport={{
+          once: false,
+        }}
+        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+      >
         <NormalText>
           Caso sua instituição <RevertColor>possua</RevertColor> um técnico de
           informática, informe para
@@ -30,7 +41,18 @@ const Doubts: React.FC = () => (
         <StyledButton>Instruções para a Instalação</StyledButton>
       </Card>
 
-      <Card>
+      <Card
+        initial={{ opacity: 0, x: 300 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.8 },
+        }}
+        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+        viewport={{
+          once: false,
+        }}
+      >
         <NormalText>
           Caso sua instituição <RevertColor>possua</RevertColor> um técnico de
           informática, informe para

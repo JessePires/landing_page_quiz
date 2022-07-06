@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // Assets
 import Background from '../../assets/bg_section.svg'
 
 export const Section = styled.section`
+  overflow-x: hidden;
   background-image: url('${Background.src}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +37,6 @@ export const Description = styled.p`
   text-align: center;
 `
 
-export const Body = styled.div`
+export const Body = styled(motion.div)`
   margin-top: 30px;
 `

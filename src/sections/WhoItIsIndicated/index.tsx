@@ -25,7 +25,18 @@ const WhoItIsIndicated: React.FC = () => (
       Veja se elas são <RevertColor>indicadas para você.</RevertColor>
     </Description>
 
-    <Card>
+    <Card
+      initial={{ opacity: 0, x: -300 }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.8 },
+      }}
+      viewport={{
+        once: false,
+      }}
+      transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+    >
       <CardIcon>
         <FaChalkboardTeacher />
       </CardIcon>
@@ -38,7 +49,18 @@ const WhoItIsIndicated: React.FC = () => (
       </CardContent>
     </Card>
 
-    <Card>
+    <Card
+      initial={{ opacity: 0, x: 300 }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.8 },
+      }}
+      viewport={{
+        once: false,
+      }}
+      transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+    >
       <CardIcon>
         <CgGirl />
       </CardIcon>
@@ -52,7 +74,17 @@ const WhoItIsIndicated: React.FC = () => (
       </CardContent>
     </Card>
 
-    <WrapperButton>
+    <WrapperButton
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+        transition: { duration: 1.3 },
+      }}
+      viewport={{
+        once: false,
+      }}
+      transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+    >
       <StyledButton>ME INTERESSEI!</StyledButton>
       <ArrowEffect />
     </WrapperButton>

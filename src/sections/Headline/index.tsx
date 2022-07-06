@@ -46,7 +46,17 @@ const Headline: React.FC = () => {
       </Header>
 
       <Body>
-        <LeftSide>
+        <LeftSide
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.8 },
+          }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+          viewport={{
+            once: false,
+          }}
+        >
           <Smartphone
             image={Example2.src}
             width={320}
@@ -66,7 +76,18 @@ const Headline: React.FC = () => {
           />
           {/* <ArrowEffect /> */}
         </LeftSide>
-        <RightSide>
+        <RightSide
+          initial={{ opacity: 0, x: 300 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.8 },
+          }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+          viewport={{
+            once: false,
+          }}
+        >
           <WelcomeText>
             Seja bem-vindo ao projeto do Quiz Gamificado.
           </WelcomeText>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // Assets
 import Background from '../../assets/bg_section.svg'
@@ -24,6 +25,7 @@ export const StyledButton = styled(Button)`
 `
 
 export const Section = styled.section`
+  overflow-x: hidden;
   height: 839px;
   background-image: url('${Background.src}');
   background-repeat: no-repeat;
@@ -87,7 +89,7 @@ export const Body = styled.div`
   }
 `
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
