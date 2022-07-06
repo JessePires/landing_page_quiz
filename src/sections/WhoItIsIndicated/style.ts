@@ -8,14 +8,14 @@ import Arrow from '../../assets/seta_enrolada.svg'
 import { Button } from '../../components'
 
 export const Section = styled.section`
-  height: 839px;
   background-image: url('${Background.src}');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 100px 30px;
 
   @media (max-width: 1150px) {
-    padding: 10px 30px;
+    padding: 20px 30px;
   }
 
   display: flex;
@@ -37,6 +37,7 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   font-size: 1.1rem;
+  text-align: center;
 `
 export const RevertColor = styled.span`
   color: ${({ theme }) => theme.colors.purple};
@@ -48,17 +49,16 @@ export const Card = styled.div`
   display: flex;
   margin: 40px 0;
   width: 60%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `
 
 export const CardIcon = styled.div`
-  height: 100%;
-  min-height: 100px;
-  width: 100px;
-  min-width: 100px;
-
   svg {
-    width: 100%;
-    height: 100%;
+    height: 5em;
+    width: 5em;
     color: white;
   }
 `

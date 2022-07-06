@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Background from '../../assets/bg_section.svg'
 
 export const Section = styled.section`
-  height: 839px;
   background-image: url('${Background.src}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +32,7 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   font-size: 1.1rem;
+  text-align: center;
 `
 
 export const Body = styled.div`

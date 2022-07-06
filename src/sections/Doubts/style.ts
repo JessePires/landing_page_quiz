@@ -64,6 +64,7 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   font-size: 1.1rem;
+  text-align: center;
 `
 export const RevertColor = styled.span`
   color: ${({ theme }) => theme.colors.purple};
