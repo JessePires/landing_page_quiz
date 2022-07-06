@@ -54,11 +54,11 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
       <BindKeyboardSwipeableViews
         index={activeImage}
         onChangeIndex={handleChangeActiveImage}
-        className="bindKeyboardSwipeableViews"
+        enableMouseEvents
+        className="SwipeableViews"
         style={{
           width: width + 20,
         }}
-        enableMouseEvents
       >
         {images.map((item, idx) => (
           <Smartphone

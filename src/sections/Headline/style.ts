@@ -130,4 +130,5 @@ export const NavbarDocumentationLink = styled(NavbarLink)`
   background: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.purple};
   padding: 10px;
+  font-weight: 700;
 `
