@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaChalkboardTeacher } from 'react-icons/fa'
+import { CgGirl } from 'react-icons/cg'
 
 import {
   Section,
@@ -9,7 +11,7 @@ import {
   CardContent,
   CardTitle,
   CardDescription,
-  CardImage,
+  CardIcon,
   WrapperButton,
   ArrowEffect,
   StyledButton,
@@ -24,7 +26,9 @@ const WhoItIsIndicated: React.FC = () => (
     </Description>
 
     <Card>
-      <CardImage>a</CardImage>
+      <CardIcon>
+        <FaChalkboardTeacher />
+      </CardIcon>
       <CardContent>
         <CardTitle>Professores</CardTitle>
         <CardDescription>
@@ -35,7 +39,9 @@ const WhoItIsIndicated: React.FC = () => (
     </Card>
 
     <Card>
-      <CardImage>a</CardImage>
+      <CardIcon>
+        <CgGirl />
+      </CardIcon>
       <CardContent>
         <CardTitle>Alunos</CardTitle>
         <CardDescription>

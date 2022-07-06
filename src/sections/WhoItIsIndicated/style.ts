@@ -14,8 +14,6 @@ export const Section = styled.section`
   background-size: cover;
   background-position: center;
 
-  padding: 0 100px;
-
   @media (max-width: 1150px) {
     padding: 10px 30px;
   }
@@ -51,12 +49,17 @@ export const Card = styled.div`
   width: 60%;
 `
 
-export const CardImage = styled.div`
+export const CardIcon = styled.div`
   height: 100%;
   min-height: 100px;
   width: 100px;
   min-width: 100px;
-  background: red;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
 `
 
 export const CardContent = styled.div`
