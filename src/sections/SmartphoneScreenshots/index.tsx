@@ -10,6 +10,9 @@ import { SliderSmartphone } from '../../components'
 const SmartphoneScreenshots: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 480px)' })
 
+  const widthMobile = isMobile ? 280 : 310
+  const heightMobile = isMobile ? 570 : 600
+
   return (
     <Section>
       <Title>Aplicativo de SmartPhone</Title>
@@ -39,7 +42,7 @@ const SmartphoneScreenshots: React.FC = () => {
         }}
         transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
       >
-        <SliderSmartphone width={310} height={600} />
+        <SliderSmartphone width={widthMobile} height={heightMobile} />
       </Body>
     </Section>
   )

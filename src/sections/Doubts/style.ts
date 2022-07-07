@@ -77,6 +77,7 @@ export const RevertColor = styled.span`
 export const NormalText = styled.p`
   color: white;
   font-size: 1rem;
+  text-align: center;
 `
 
 export const Body = styled.div`
