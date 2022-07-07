@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
+import { Element } from 'react-scroll'
 
 // Style
 import { Section, Title, Description, Body } from './style'
@@ -14,37 +15,39 @@ const SmartphoneScreenshots: React.FC = () => {
   const heightMobile = isMobile ? 570 : 600
 
   return (
-    <Section>
-      <Title>Aplicativo de SmartPhone</Title>
-      {!isMobile && (
-        <>
+    <Element name="SmartphoneScreenshots">
+      <Section>
+        <Title>Aplicativo de SmartPhone</Title>
+        {!isMobile && (
+          <>
+            <Description>
+              Aqui estão algumas imagens para você ter uma ideia
+            </Description>
+            <Description>de como ele está.</Description>
+          </>
+        )}
+
+        {isMobile && (
           <Description>
-            Aqui estão algumas imagens para você ter uma ideia
+            Aqui estão algumas imagens para você ter uma ideia de como ele está
           </Description>
-          <Description>de como ele está.</Description>
-        </>
-      )}
+        )}
 
-      {isMobile && (
-        <Description>
-          Aqui estão algumas imagens para você ter uma ideia de como ele está
-        </Description>
-      )}
-
-      <Body
-        initial={{ opacity: 0 }}
-        whileInView={{
-          opacity: 1,
-          transition: { duration: 1.3 },
-        }}
-        viewport={{
-          once: false,
-        }}
-        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
-      >
-        <SliderSmartphone width={widthMobile} height={heightMobile} />
-      </Body>
-    </Section>
+        <Body
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 1.3 },
+          }}
+          viewport={{
+            once: false,
+          }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+        >
+          <SliderSmartphone width={widthMobile} height={heightMobile} />
+        </Body>
+      </Section>
+    </Element>
   )
 }
 

@@ -52,6 +52,7 @@ export const NavbarLink = styled.a`
   font-weight: 500;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 `
 export const Body = styled.div`
   margin-top: 40px;
