@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 // Assets
-import Background from '../../assets/bg_header.png'
+import Background from '../../assets/bg_header.svg'
 import LogoImage from '../../assets/logo.png'
 import Arrow from '../../assets/seta_enrolada.svg'
 import Line from '../../assets/minhoca.svg'
