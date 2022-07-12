@@ -14,7 +14,7 @@ import {
 } from "./style";
 
 // Components
-import Card from "../../components/Card";
+import { Card } from "../../components";
 
 const AvailableProducts: React.FC = () => (
   <Section>

@@ -7,6 +7,7 @@ import AvailableProducts from "../sections/AvailableProducts";
 import WhoItIsIndicatedSection from "../sections/WhoItIsIndicated";
 import SmartphoneScreenshotsSection from "../sections/SmartphoneScreenshots";
 import DoubtsSection from "../sections/Doubts";
+import Footer from "../sections/Footer";
 
 const Home: React.FC = () => (
   <div id="containerElementID">
@@ -31,6 +32,7 @@ const Home: React.FC = () => (
     <WhoItIsIndicatedSection />
     <SmartphoneScreenshotsSection />
     <DoubtsSection />
+    <Footer />
   </div>
 );
 
