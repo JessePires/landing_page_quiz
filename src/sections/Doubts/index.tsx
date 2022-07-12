@@ -1,5 +1,7 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
+import { useMediaQuery } from "react-responsive";
+import { Element } from "react-scroll";
 
 import {
   Section,
@@ -13,58 +15,92 @@ import {
   NormalText,
 } from "./style";
 
-const Doubts: React.FC = () => (
-  <Section>
-    <Title>Dúvidas?</Title>
-    <Description>Ficou interessado? Quer mais informaçõe?</Description>
-    <Description>Entre em contato conosco...</Description>
+const Doubts: React.FC = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 1150px)" });
 
-    <SubTitle>Quer utilizar este sistema em sua escola/universidade?</SubTitle>
-    <Body>
-      <Card
-        initial={{ opacity: 0, x: -300 }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: { duration: 0.8 },
-        }}
-        viewport={{
-          once: false,
-        }}
-        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
-      >
-        <NormalText>
-          Caso sua instituição <RevertColor>possua</RevertColor> um técnico de
-          informática, informe para
-        </NormalText>
-        <NormalText>o mesmo seguir as instruções clicando em:</NormalText>
-        <StyledButton>Instruções para a Instalação</StyledButton>
-      </Card>
+  return (
+    <Element name="Doubts">
+      <Section>
+        <Title>Dúvidas?</Title>
+        <Description>Ficou interessado? Quer mais informaçõe?</Description>
+        <Description>Entre em contato conosco...</Description>
 
-      <Card
-        initial={{ opacity: 0, x: 300 }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: { duration: 0.8 },
-        }}
-        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
-        viewport={{
-          once: false,
-        }}
-      >
-        <NormalText>
-          Caso sua instituição <RevertColor>possua</RevertColor> um técnico de
-          informática, informe para
-        </NormalText>
-        <NormalText>o mesmo seguir as instruções clicando em:</NormalText>
-        <StyledButton>
-          <MdEmail />
-          quizutfpr@gmail.com
-        </StyledButton>
-      </Card>
-    </Body>
-  </Section>
-);
+        <SubTitle>
+          Quer utilizar este sistema em sua escola/universidade?
+        </SubTitle>
+        <Body>
+          <Card
+            initial={{ opacity: 0, x: -300 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { duration: 0.8 },
+            }}
+            viewport={{
+              once: false,
+            }}
+            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+          >
+            {isMobile && (
+              <NormalText>
+                Caso sua instituição <RevertColor>possua</RevertColor> um
+                técnico de informática, informe para o mesmo seguir as
+                instruções clicando em:
+              </NormalText>
+            )}
+            {!isMobile && (
+              <>
+                <NormalText>
+                  Caso sua instituição <RevertColor>possua</RevertColor> um
+                  técnico de informática, informe para
+                </NormalText>
+                <NormalText>
+                  o mesmo seguir as instruções clicando em:
+                </NormalText>
+              </>
+            )}
+            <StyledButton>Instruções para a Instalação</StyledButton>
+          </Card>
+
+          <Card
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { duration: 0.8 },
+            }}
+            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+            viewport={{
+              once: false,
+            }}
+          >
+            {isMobile && (
+              <NormalText>
+                Caso sua instituição <RevertColor>possua</RevertColor> um
+                técnico de informática, informe para o mesmo seguir as
+                instruções clicando em:
+              </NormalText>
+            )}
+            {!isMobile && (
+              <>
+                <NormalText>
+                  Caso sua instituição <RevertColor>possua</RevertColor> um
+                  técnico de informática, informe para
+                </NormalText>
+                <NormalText>
+                  o mesmo seguir as instruções clicando em:
+                </NormalText>
+              </>
+            )}
+            <StyledButton>
+              <MdEmail />
+              quizutfpr@gmail.com
+            </StyledButton>
+          </Card>
+        </Body>
+      </Section>
+    </Element>
+  );
+};
 
 export default Doubts;

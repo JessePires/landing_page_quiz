@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 // Assets
-import Background from "../../assets/bg_header.png";
+import Background from "../../assets/bg_header.svg";
 import LogoImage from "../../assets/logo.png";
 import Arrow from "../../assets/seta_enrolada.svg";
 import Line from "../../assets/minhoca.svg";
@@ -52,6 +52,7 @@ export const NavbarLink = styled.a`
   font-weight: 500;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 `;
 export const Body = styled.div`
   margin-top: 40px;
