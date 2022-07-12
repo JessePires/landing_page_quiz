@@ -1,11 +1,12 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
 
 // Sections
-import HeadlineSection from '../sections/Headline'
-import WhoItIsIndicatedSection from '../sections/WhoItIsIndicated'
-import SmartphoneScreenshotsSection from '../sections/SmartphoneScreenshots'
-import DoubtsSection from '../sections/Doubts'
+import HeadlineSection from "../sections/Headline";
+import AvailableProducts from "../sections/AvailableProducts";
+import WhoItIsIndicatedSection from "../sections/WhoItIsIndicated";
+import SmartphoneScreenshotsSection from "../sections/SmartphoneScreenshots";
+import DoubtsSection from "../sections/Doubts";
 
 const Home: React.FC = () => (
   <div>
@@ -26,10 +27,11 @@ const Home: React.FC = () => (
     </Head>
 
     <HeadlineSection />
+    <AvailableProducts />
     <WhoItIsIndicatedSection />
     <SmartphoneScreenshotsSection />
     <DoubtsSection />
   </div>
-)
+);
 
-export default Home
+export default Home;

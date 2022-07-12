@@ -1,6 +1,6 @@
-import React from 'react'
-import { FaChalkboardTeacher } from 'react-icons/fa'
-import { CgGirl } from 'react-icons/cg'
+import React from "react";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { CgGirl } from "react-icons/cg";
 
 import {
   Section,
@@ -15,7 +15,7 @@ import {
   WrapperButton,
   ArrowEffect,
   StyledButton,
-} from './style'
+} from "./style";
 
 const WhoItIsIndicated: React.FC = () => (
   <Section>
@@ -35,7 +35,7 @@ const WhoItIsIndicated: React.FC = () => (
       viewport={{
         once: false,
       }}
-      transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+      transition={{ type: "spring", duration: 5, bounce: 0.6 }}
     >
       <CardIcon>
         <FaChalkboardTeacher />
@@ -59,7 +59,7 @@ const WhoItIsIndicated: React.FC = () => (
       viewport={{
         once: false,
       }}
-      transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+      transition={{ type: "spring", duration: 5, bounce: 0.6 }}
     >
       <CardIcon>
         <CgGirl />
@@ -83,12 +83,12 @@ const WhoItIsIndicated: React.FC = () => (
       viewport={{
         once: false,
       }}
-      transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+      transition={{ type: "spring", duration: 5, bounce: 0.6 }}
     >
       <StyledButton>ME INTERESSEI!</StyledButton>
       <ArrowEffect />
     </WrapperButton>
   </Section>
-)
+);
 
-export default WhoItIsIndicated
+export default WhoItIsIndicated;

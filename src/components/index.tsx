@@ -1,5 +1,5 @@
-import Button from './Button'
-import Smartphone from './Smartphone'
-import SliderSmartphone from './SliderSmartphone'
+import Button from "./Button";
+import Smartphone from "./Smartphone";
+import SliderSmartphone from "./SliderSmartphone";
 
-export { Button, Smartphone, SliderSmartphone }
+export { Button, Smartphone, SliderSmartphone };

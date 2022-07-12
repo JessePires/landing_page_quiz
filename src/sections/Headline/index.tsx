@@ -1,5 +1,5 @@
-import React from 'react'
-import { useMediaQuery } from 'react-responsive'
+import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 import {
   Section,
@@ -16,16 +16,16 @@ import {
   LineEffect,
   StyledButton,
   NavbarDocumentationLink,
-} from './style'
+} from "./style";
 
-import { Smartphone } from '../../components'
+import { Smartphone } from "../../components";
 
 // Assets
-import Example1 from '../../assets/mobile_screenshots/example.png'
-import Example2 from '../../assets/mobile_screenshots/example2.png'
+import Example1 from "../../assets/mobile_screenshots/example.png";
+import Example2 from "../../assets/mobile_screenshots/example2.png";
 
 const Headline: React.FC = () => {
-  const isTablet = useMediaQuery({ query: '(max-width: 700px)' })
+  const isTablet = useMediaQuery({ query: "(max-width: 700px)" });
 
   return (
     <Section>
@@ -52,7 +52,7 @@ const Headline: React.FC = () => {
             opacity: 1,
             transition: { duration: 0.8 },
           }}
-          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+          transition={{ type: "spring", duration: 5, bounce: 0.6 }}
           viewport={{
             once: false,
           }}
@@ -68,10 +68,10 @@ const Headline: React.FC = () => {
             width={300}
             height={600}
             style={{
-              transform: 'rotateZ(19deg)',
-              position: 'absolute',
-              top: '16px',
-              left: '115px',
+              transform: "rotateZ(19deg)",
+              position: "absolute",
+              top: "16px",
+              left: "115px",
             }}
           />
           {/* <ArrowEffect /> */}
@@ -83,7 +83,7 @@ const Headline: React.FC = () => {
             x: 0,
             transition: { duration: 0.8 },
           }}
-          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+          transition={{ type: "spring", duration: 5, bounce: 0.6 }}
           viewport={{
             once: false,
           }}
@@ -104,7 +104,7 @@ const Headline: React.FC = () => {
         </RightSide>
       </Body>
     </Section>
-  )
-}
+  );
+};
 
-export default Headline
+export default Headline;

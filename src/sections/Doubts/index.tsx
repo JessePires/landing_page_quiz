@@ -1,5 +1,5 @@
-import React from 'react'
-import { MdEmail } from 'react-icons/md'
+import React from "react";
+import { MdEmail } from "react-icons/md";
 
 import {
   Section,
@@ -11,7 +11,7 @@ import {
   Body,
   Card,
   NormalText,
-} from './style'
+} from "./style";
 
 const Doubts: React.FC = () => (
   <Section>
@@ -31,7 +31,7 @@ const Doubts: React.FC = () => (
         viewport={{
           once: false,
         }}
-        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
       >
         <NormalText>
           Caso sua instituição <RevertColor>possua</RevertColor> um técnico de
@@ -48,7 +48,7 @@ const Doubts: React.FC = () => (
           x: 0,
           transition: { duration: 0.8 },
         }}
-        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
         viewport={{
           once: false,
         }}
@@ -65,6 +65,6 @@ const Doubts: React.FC = () => (
       </Card>
     </Body>
   </Section>
-)
+);
 
-export default Doubts
+export default Doubts;

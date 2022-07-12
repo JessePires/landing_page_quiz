@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-`
+`;
 
 export const NextButton = styled.button`
   cursor: pointer;
@@ -17,7 +17,7 @@ export const NextButton = styled.button`
   svg path {
     stroke: white;
   }
-`
+`;
 
 export const PrevButton = styled.button`
   cursor: pointer;
@@ -34,4 +34,4 @@ export const PrevButton = styled.button`
   svg path {
     stroke: white;
   }
-`
+`;

@@ -1,14 +1,14 @@
-import React from 'react'
-import { useMediaQuery } from 'react-responsive'
+import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 // Style
-import { Section, Title, Description, Body } from './style'
+import { Section, Title, Description, Body } from "./style";
 
 // Components
-import { SliderSmartphone } from '../../components'
+import { SliderSmartphone } from "../../components";
 
 const SmartphoneScreenshots: React.FC = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 480px)' })
+  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
 
   return (
     <Section>
@@ -37,12 +37,12 @@ const SmartphoneScreenshots: React.FC = () => {
         viewport={{
           once: false,
         }}
-        transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
       >
         <SliderSmartphone width={310} height={600} />
       </Body>
     </Section>
-  )
-}
+  );
+};
 
-export default SmartphoneScreenshots
+export default SmartphoneScreenshots;
