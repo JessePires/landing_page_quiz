@@ -1,18 +1,18 @@
-import React from "react";
-import { useMediaQuery } from "react-responsive";
-import { Element } from "react-scroll";
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
+import { Element } from 'react-scroll'
 
 // Style
-import { Section, Title, Description, Body } from "./style";
+import { Section, Title, Description, Body } from './style'
 
 // Components
-import { SliderSmartphone } from "../../components";
+import { SliderSmartphone } from '../../components'
 
 const SmartphoneScreenshots: React.FC = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
+  const isMobile = useMediaQuery({ query: '(max-width: 480px)' })
 
-  const widthMobile = isMobile ? 280 : 310;
-  const heightMobile = isMobile ? 570 : 600;
+  const widthMobile = isMobile ? 280 : 310
+  const heightMobile = isMobile ? 570 : 600
 
   return (
     <Element name="SmartphoneScreenshots">
@@ -42,13 +42,13 @@ const SmartphoneScreenshots: React.FC = () => {
           viewport={{
             once: false,
           }}
-          transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
         >
           <SliderSmartphone width={widthMobile} height={heightMobile} />
         </Body>
       </Section>
     </Element>
-  );
-};
+  )
+}
 
-export default SmartphoneScreenshots;
+export default SmartphoneScreenshots
