@@ -42,7 +42,6 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
             clickable: true,
           }}
           modules={[Navigation]}
-          className="mySwiper"
         >
           <div className="swiper-button-prev">
             <PrevButton />
@@ -52,14 +51,9 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
           </div>
 
           {images.map((item, idx) => (
-            <SwiperSlide className="swipperSlider">
+            <SwiperSlide key={idx}>
               <ContentSlider>
-                <Smartphone
-                  key={idx}
-                  width={width}
-                  height={height}
-                  image={item.src}
-                />
+                <Smartphone width={width} height={height} image={item.src} />
               </ContentSlider>
             </SwiperSlide>
           ))}
