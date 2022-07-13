@@ -6,30 +6,36 @@ import { autoPlay, bindKeyboard } from "react-swipeable-views-utils";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 
 // Style
-import { Container, NextButton, PrevButton } from "./style";
+import {
+  Container,
+  PrevButton,
+  NextButton,
+  ImageWrapper,
+  Image,
+} from "./style";
 
 // Assets
-import Example from "../../assets/mobile_screenshots/example.png";
-import Example2 from "../../assets/mobile_screenshots/example2.png";
-
-// Components
-import { Smartphone } from "../index";
-
-type SmartPhoneSlider = {
-  width?: number;
-  height?: number;
-  style?: React.CSSProperties;
-};
+import CreateClass from "../../assets/control_painel_screenshots/create_class.png";
+import CreateQuestion from "../../assets/control_painel_screenshots/create_question.png";
+import CreateQuiz from "../../assets/control_painel_screenshots/create_quiz.png";
+import Faq from "../../assets/control_painel_screenshots/faq.png";
+import ListClass from "../../assets/control_painel_screenshots/list_class.png";
+import ManageClass from "../../assets/control_painel_screenshots/manage_class.png";
+import PainelControleQuizUTFPR from "../../assets/control_painel_screenshots/Painel-de-Controle-Quiz-UTFPR.png";
 
 const BindKeyboardSwipeableViews = bindKeyboard(autoPlay(SwipeableViews));
 
-const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
-  width,
-  height,
-  ...props
-}) => {
+const SliderControlPainel: React.FC = () => {
   const [activeImage, setActiveImage] = useState<number>(0);
-  const images = [Example, Example2];
+  const images = [
+    CreateClass,
+    CreateQuestion,
+    CreateQuiz,
+    Faq,
+    ListClass,
+    ManageClass,
+    PainelControleQuizUTFPR,
+  ];
 
   const handleNext = () => {
     setActiveImage((prevActiveImage) => (prevActiveImage + 1) % images.length);
@@ -48,33 +54,28 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
   };
 
   return (
-    <Container {...props}>
+    <Container>
       {images.length > 1 && (
         <PrevButton onClick={handleBack}>
           <IoChevronBackOutline />
         </PrevButton>
       )}
-
       <BindKeyboardSwipeableViews
         enableMouseEvents
         index={activeImage}
         onChangeIndex={handleChangeActiveImage}
         className="SwipeableViews"
-        style={{
-          width: width + 15,
-        }}
+        // style={{
+        //   width: width + 15,
+        // }}
       >
         {images.map((item, idx) => (
-          <Smartphone
-            // eslint-disable-next-line react/no-array-index-key
-            key={idx}
-            width={width}
-            height={height}
-            image={item.src}
-          />
+          // eslint-disable-next-line react/no-array-index-key
+          <ImageWrapper key={idx}>
+            <Image alt="" src={item.src} />
+          </ImageWrapper>
         ))}
       </BindKeyboardSwipeableViews>
-
       {images.length > 1 && (
         <NextButton
           // disabled={activeImage === images.length - 1}
@@ -87,10 +88,4 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
   );
 };
 
-SmartPhoneSlider.defaultProps = {
-  width: 320,
-  height: 640,
-  style: {},
-};
-
-export default SmartPhoneSlider;
+export default SliderControlPainel;

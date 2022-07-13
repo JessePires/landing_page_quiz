@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   overflow-x: hidden;
-  height: 839px;
+  /* height: 839px; */
+  padding-top: 100px;
 
   @media (max-width: 1150px) {
     padding: 10px 30px;
@@ -42,7 +43,7 @@ export const Body = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 40px;
+  margin: 50px 50px;
 
   @media (max-width: 550px) {
     flex-direction: column;

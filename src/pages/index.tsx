@@ -3,11 +3,12 @@ import Head from "next/head";
 
 // Sections
 import HeadlineSection from "../sections/Headline";
-import AvailableProducts from "../sections/AvailableProducts";
+import AvailableProductsSection from "../sections/AvailableProducts";
 import WhoItIsIndicatedSection from "../sections/WhoItIsIndicated";
+import ControlPainelSection from "../sections/ControlPainel";
 import SmartphoneScreenshotsSection from "../sections/SmartphoneScreenshots";
 import DoubtsSection from "../sections/Doubts";
-import Footer from "../sections/Footer";
+import FooterSection from "../sections/Footer";
 
 const Home: React.FC = () => (
   <div id="containerElementID">
@@ -28,11 +29,12 @@ const Home: React.FC = () => (
     </Head>
 
     <HeadlineSection />
-    <AvailableProducts />
+    <AvailableProductsSection />
     <WhoItIsIndicatedSection />
+    <ControlPainelSection />
     <SmartphoneScreenshotsSection />
     <DoubtsSection />
-    <Footer />
+    <FooterSection />
   </div>
 );
 

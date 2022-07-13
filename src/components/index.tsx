@@ -1,6 +1,7 @@
 import Button from "./Button";
-import Smartphone from "./Smartphone";
-import SliderSmartphone from "./SliderSmartphone";
 import Card from "./Card";
+import SliderControlPainel from "./SliderControlPainel";
+import SliderSmartphone from "./SliderSmartphone";
+import Smartphone from "./Smartphone";
 
-export { Button, Smartphone, SliderSmartphone, Card };
+export { Button, Card, SliderControlPainel, SliderSmartphone, Smartphone };
