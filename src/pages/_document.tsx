@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 // import { ServerStyleSheet } from 'styled-components'
 import Document, {
   DocumentInitialProps,
@@ -7,27 +7,27 @@ import Document, {
   Html,
   Main,
   NextScript,
-} from "next/document";
+} from 'next/document'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
-    const originalRenderPage = ctx.renderPage;
+    const originalRenderPage = ctx.renderPage
 
     // Run the React rendering logic synchronously
     ctx.renderPage = () =>
       originalRenderPage({
         // Useful for wrapping the whole react tree
-        enhanceApp: (App) => App,
+        enhanceApp: App => App,
         // Useful for wrapping in a per-page basis
-        enhanceComponent: (Component) => Component,
-      });
+        enhanceComponent: Component => Component,
+      })
 
     // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-    const initialProps = await Document.getInitialProps(ctx);
+    const initialProps = await Document.getInitialProps(ctx)
 
-    return initialProps;
+    return initialProps
   }
 
   // Changing global font style
@@ -35,6 +35,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
         </Head>
 
@@ -43,6 +44,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
