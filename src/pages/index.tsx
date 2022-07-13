@@ -7,6 +7,7 @@ import AvailableProductsSection from "../sections/AvailableProducts";
 import WhoItIsIndicatedSection from "../sections/WhoItIsIndicated";
 import ControlPainelSection from "../sections/ControlPainel";
 import SmartphoneScreenshotsSection from "../sections/SmartphoneScreenshots";
+import FuturePlansSection from "../sections/FuturePlans";
 import DoubtsSection from "../sections/Doubts";
 import FooterSection from "../sections/Footer";
 
@@ -33,6 +34,7 @@ const Home: React.FC = () => (
     <WhoItIsIndicatedSection />
     <ControlPainelSection />
     <SmartphoneScreenshotsSection />
+    <FuturePlansSection />
     <DoubtsSection />
     <FooterSection />
   </div>

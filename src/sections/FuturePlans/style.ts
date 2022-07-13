@@ -1,15 +1,7 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
-// Assets
-import Background from "../../assets/bg_section.svg";
-
-export const Section = styled.section`
+export const Section = styled.div`
   overflow-x: hidden;
-  background-image: url("${Background.src}");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding-top: 100px;
   padding-bottom: 50px;
 
@@ -24,7 +16,7 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.p`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.black};
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
@@ -35,12 +27,14 @@ export const Title = styled.p`
 `;
 
 export const Description = styled.p`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.black};
   font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
 `;
 
-export const Body = styled(motion.div)`
-  margin-top: 30px;
+export const RevertColor = styled.span`
+  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.purple};
+  font-weight: 700;
 `;
