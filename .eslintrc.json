@@ -25,6 +25,7 @@
     "prettier"
   ],
   "rules": {
+    "react/no-array-index-key": "off",
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "react/prop-types": "off",
