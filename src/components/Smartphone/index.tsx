@@ -18,9 +18,9 @@ const Smartphone: React.FC<SmartphoneProps> = ({
 }) => (
   <Container width={width} height={height} {...props}>
     <Speaker />
-    <Power />
     <Volume />
     <Screen alt="" src={image} />
+    {/* <Power /> */}
   </Container>
 );
 
