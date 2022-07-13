@@ -1,37 +1,32 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+
+interface SliderContainerProps {
+  width: number
+}
 
 export const Container = styled.div`
   display: flex;
-`;
+  height: 100%;
+`
 
-export const NextButton = styled.button`
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
+export const SliderContainer = styled.div<SliderContainerProps>`
+  height: 100%;
+  width: ${({ width }) => width}px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-  svg {
-    height: 40px;
-    width: 40px;
+  .swiper-button-next::after {
+    display: none;
   }
 
-  svg path {
-    stroke: white;
+  .swiper-button-prev::after {
+    display: none;
   }
-`;
+`
 
-export const PrevButton = styled.button`
-  cursor: pointer;
-  margin-right: 20px; // Por causa do width +20 no index.tsx
-
-  background-color: transparent;
-  border: none;
-
-  svg {
-    height: 40px;
-    width: 40px;
-  }
-
-  svg path {
-    stroke: white;
-  }
-`;
+export const ContentSlider = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`

@@ -1,96 +1,79 @@
-import React, { useState } from "react";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay, bindKeyboard } from "react-swipeable-views-utils";
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper'
 
-// Icons
-import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
+import NextButton from '../NextSwipperButton'
+import PrevButton from '../PrevSwipperButton'
 
 // Style
-import { Container, NextButton, PrevButton } from "./style";
+import { Container, SliderContainer, ContentSlider } from './style'
 
 // Assets
-import Example from "../../assets/mobile_screenshots/example.png";
-import Example2 from "../../assets/mobile_screenshots/example2.png";
+import Example from '../../assets/mobile_screenshots/example.png'
+import Example2 from '../../assets/mobile_screenshots/example2.png'
 
 // Components
-import { Smartphone } from "../index";
+import { Smartphone } from '../index'
 
 type SmartPhoneSlider = {
-  width?: number;
-  height?: number;
-  style?: React.CSSProperties;
-};
-
-const BindKeyboardSwipeableViews = bindKeyboard(autoPlay(SwipeableViews));
+  width?: number
+  height?: number
+  style?: React.CSSProperties
+}
 
 const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
   width,
   height,
   ...props
 }) => {
-  const [activeImage, setActiveImage] = useState<number>(0);
-  const images = [Example, Example2];
-
-  const handleNext = () => {
-    setActiveImage((prevActiveImage) => (prevActiveImage + 1) % images.length);
-  };
-
-  const handleBack = () => {
-    setActiveImage((prevActiveImage) => {
-      if (prevActiveImage === 0) return images.length - 1;
-
-      return (prevActiveImage - 1) % images.length;
-    });
-  };
-
-  const handleChangeActiveImage = (step: number) => {
-    setActiveImage(step);
-  };
+  const images = [Example, Example2]
 
   return (
     <Container {...props}>
-      {images.length > 1 && (
-        <PrevButton onClick={handleBack}>
-          <IoChevronBackOutline />
-        </PrevButton>
-      )}
-
-      <BindKeyboardSwipeableViews
-        enableMouseEvents
-        index={activeImage}
-        onChangeIndex={handleChangeActiveImage}
-        className="SwipeableViews"
-        style={{
-          width: width + 15,
-        }}
-      >
-        {images.map((item, idx) => (
-          <Smartphone
-            // eslint-disable-next-line react/no-array-index-key
-            key={idx}
-            width={width}
-            height={height}
-            image={item.src}
-          />
-        ))}
-      </BindKeyboardSwipeableViews>
-
-      {images.length > 1 && (
-        <NextButton
-          // disabled={activeImage === images.length - 1}
-          onClick={handleNext}
+      <SliderContainer width={width + 80}>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={1}
+          loop
+          centeredSlides
+          navigation
+          roundLengths
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Navigation]}
+          className="mySwiper"
         >
-          <IoChevronForwardOutline />
-        </NextButton>
-      )}
+          <div className="swiper-button-prev">
+            <PrevButton />
+          </div>
+          <div className="swiper-button-next">
+            <NextButton />
+          </div>
+
+          {images.map((item, idx) => (
+            <SwiperSlide className="swipperSlider">
+              <ContentSlider>
+                <Smartphone
+                  // eslint-disable-next-line react/no-array-index-key
+                  key={idx}
+                  width={width}
+                  height={height}
+                  image={item.src}
+                />
+              </ContentSlider>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </SliderContainer>
     </Container>
-  );
-};
+  )
+}
 
 SmartPhoneSlider.defaultProps = {
   width: 320,
   height: 640,
   style: {},
-};
+}
 
-export default SmartPhoneSlider;
+export default SmartPhoneSlider

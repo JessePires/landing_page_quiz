@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
 // Styles
-import { Container, Screen, Speaker, Power, Volume } from "./style";
+import { Container, Screen, Speaker, Power, Volume } from './style'
 
 type SmartphoneProps = {
-  width?: number;
-  height?: number;
-  style?: React.CSSProperties;
-  image?: string;
-};
+  width?: number
+  height?: number
+  style?: React.CSSProperties
+  image?: string
+}
 
 const Smartphone: React.FC<SmartphoneProps> = ({
   width,
@@ -20,15 +20,15 @@ const Smartphone: React.FC<SmartphoneProps> = ({
     <Speaker />
     <Volume />
     <Screen alt="" src={image} />
-    {/* <Power /> */}
+    <Power />
   </Container>
-);
+)
 
 Smartphone.defaultProps = {
   width: 320,
   height: 640,
-  image: "",
+  image: '',
   style: {},
-};
+}
 
-export default Smartphone;
+export default Smartphone
