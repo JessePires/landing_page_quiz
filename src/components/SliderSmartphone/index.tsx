@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper'
+import { Navigation, EffectCards, Autoplay, Keyboard } from 'swiper'
 
 import NextButton from '../NextSwipperButton'
 import PrevButton from '../PrevSwipperButton'
@@ -26,7 +26,7 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
   height,
   ...props
 }) => {
-  const images = [Example, Example2]
+  const images = [Example, Example2, Example, Example2]
 
   return (
     <Container {...props}>
@@ -34,14 +34,22 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
         <Swiper
           slidesPerView={1}
           spaceBetween={1}
+          modules={[Navigation, EffectCards, Autoplay, Keyboard]}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          effect="cards"
           loop
           centeredSlides
           navigation
           roundLengths
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Navigation]}
         >
           <div className="swiper-button-prev">
             <PrevButton />
