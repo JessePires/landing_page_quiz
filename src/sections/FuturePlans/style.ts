@@ -24,6 +24,8 @@ export const Title = styled.p`
   @media (max-width: 510px) {
     font-size: 2.5rem;
   }
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const Description = styled.p`
@@ -31,6 +33,8 @@ export const Description = styled.p`
   font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const RevertColor = styled.span`

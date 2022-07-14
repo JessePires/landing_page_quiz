@@ -25,6 +25,8 @@ export const Section = styled.section`
 `
 
 export const Title = styled.p`
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   color: ${({ theme }) => theme.colors.white};
   font-weight: 700;
   font-size: 3rem;
@@ -36,6 +38,8 @@ export const Title = styled.p`
 `
 
 export const Description = styled.p`
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   font-size: 1.1rem;

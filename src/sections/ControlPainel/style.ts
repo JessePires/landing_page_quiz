@@ -20,6 +20,8 @@ export const Title = styled.p`
   @media (max-width: 510px) {
     font-size: 2.5rem;
   }
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const Description = styled.p`
@@ -33,4 +35,6 @@ export const Description = styled.p`
   @media (max-width: 590px) {
     width: 90%;
   }
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `

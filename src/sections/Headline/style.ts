@@ -53,6 +53,7 @@ export const NavbarLink = styled.a`
   color: white;
   text-decoration: none;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 export const Body = styled.div`
   margin-top: 40px;
@@ -86,6 +87,7 @@ export const WelcomeText = styled.p`
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const Title = styled.p`
@@ -97,12 +99,15 @@ export const Title = styled.p`
   @media (max-width: 510px) {
     font-size: 2.5rem;
   }
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const Description = styled.p`
   color: white;
   font-size: 1rem;
   margin-bottom: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const ArrowEffect = styled.img.attrs({
