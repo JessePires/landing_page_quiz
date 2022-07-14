@@ -10,6 +10,7 @@ import theme from '../styles/theme'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import 'swiper/css/effect-cards'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Autoplay, Keyboard } from 'swiper'
+import { Navigation, Autoplay, Keyboard, EffectCards } from 'swiper'
+import { useMediaQuery } from 'react-responsive'
 
 import NextButton from '../NextSwipperButton'
 import PrevButton from '../PrevSwipperButton'
@@ -35,6 +36,8 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
   height,
   ...props
 }) => {
+  const isMobile = useMediaQuery({ query: '(max-width: 550px)' })
+
   const images = [
     Initial,
     Avatar,
@@ -49,13 +52,15 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
     ClassInfo,
   ]
 
+  const correctWidth = isMobile ? width + 80 : width + 230
+
   return (
     <Container {...props}>
-      <SliderContainer width={width + 80}>
+      <SliderContainer width={correctWidth}>
         <Swiper
           slidesPerView={1}
           spaceBetween={1}
-          modules={[Navigation, Autoplay, Keyboard]}
+          modules={[Navigation, Autoplay, Keyboard, EffectCards]}
           pagination={{
             clickable: true,
           }}
@@ -70,6 +75,7 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
           centeredSlides
           navigation
           roundLengths
+          effect={isMobile ? 'slide' : 'cards'}
         >
           <div className="swiper-button-prev">
             <PrevButton />
