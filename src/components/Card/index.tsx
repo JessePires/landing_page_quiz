@@ -8,10 +8,12 @@ type Card = {
   title?: string;
   children: JSX.Element | string;
   note?: string;
+  width?: string;
 };
 
-const Card: React.FC<Card> = ({ icon, title, note, children }) => (
+const Card: React.FC<Card> = ({ icon, title, note, children, width }) => (
   <Wrapper
+    width={width}
     initial={{ opacity: 0 }}
     whileInView={{
       opacity: 1,
@@ -33,6 +35,7 @@ Card.defaultProps = {
   icon: <span />,
   title: "teste",
   note: "",
+  width: "35%",
 };
 
 export default Card;

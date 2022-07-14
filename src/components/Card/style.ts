@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const Wrapper = styled(motion.div)`
+interface WrapperProps {
+  width: string;
+}
+
+export const Wrapper = styled(motion.div)<WrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 30px;
-  width: 35%;
+  width: ${({ width }) => width};
   border-radius: 10px;
   box-shadow: 0px 3px 8px #d3d3d3;
   background: ${({ theme }) => theme.colors.white};
