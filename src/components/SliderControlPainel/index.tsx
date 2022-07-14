@@ -15,31 +15,21 @@ import {
 } from "./style";
 
 // Assets
-<<<<<<< HEAD
+import Class from "../../assets/control_painel_screenshots/class.png";
+import ClassDetails from "../../assets/control_painel_screenshots/class_details.png";
 import CreateClass from "../../assets/control_painel_screenshots/create_class.png";
 import CreateQuestion from "../../assets/control_painel_screenshots/create_question.png";
 import CreateQuiz from "../../assets/control_painel_screenshots/create_quiz.png";
+import DBQuestion from "../../assets/control_painel_screenshots/db_question.png";
+import EditClass from "../../assets/control_painel_screenshots/edit_class.png";
 import Faq from "../../assets/control_painel_screenshots/faq.png";
-import ListClass from "../../assets/control_painel_screenshots/list_class.png";
-import ManageClass from "../../assets/control_painel_screenshots/manage_class.png";
-import PainelControleQuizUTFPR from "../../assets/control_painel_screenshots/Painel-de-Controle-Quiz-UTFPR.png";
-=======
-import Class from '../../assets/control_painel_screenshots/class.png'
-import ClassDetails from '../../assets/control_painel_screenshots/class_details.png'
-import CreateClass from '../../assets/control_painel_screenshots/create_class.png'
-import CreateQuestion from '../../assets/control_painel_screenshots/create_question.png'
-import CreateQuiz from '../../assets/control_painel_screenshots/create_quiz.png'
-import DBQuestion from '../../assets/control_painel_screenshots/db_question.png'
-import EditClass from '../../assets/control_painel_screenshots/edit_class.png'
-import Faq from '../../assets/control_painel_screenshots/faq.png'
-import Login from '../../assets/control_painel_screenshots/login.png'
-import QuizQuestions from '../../assets/control_painel_screenshots/quiz_questions.png'
-import Quizzes from '../../assets/control_painel_screenshots/quizzes.png'
-import SearchImage from '../../assets/control_painel_screenshots/search_image.png'
-import StatisticsQuizQuestion from '../../assets/control_painel_screenshots/statistics_quiz_question.png'
-import StatisticsQuizStudent from '../../assets/control_painel_screenshots/statistics_quiz_student.png'
-import EditQuiz from '../../assets/control_painel_screenshots/edit_quiz.png'
->>>>>>> ac22043ac1ea14f099963b8d49ee7dce37c7ea62
+import Login from "../../assets/control_painel_screenshots/login.png";
+import QuizQuestions from "../../assets/control_painel_screenshots/quiz_questions.png";
+import Quizzes from "../../assets/control_painel_screenshots/quizzes.png";
+import SearchImage from "../../assets/control_painel_screenshots/search_image.png";
+import StatisticsQuizQuestion from "../../assets/control_painel_screenshots/statistics_quiz_question.png";
+import StatisticsQuizStudent from "../../assets/control_painel_screenshots/statistics_quiz_student.png";
+import EditQuiz from "../../assets/control_painel_screenshots/edit_quiz.png";
 
 const BindKeyboardSwipeableViews = bindKeyboard(autoPlay(SwipeableViews));
 
@@ -60,15 +50,8 @@ const SliderControlPainel: React.FC = () => {
     EditClass,
     CreateClass,
     Faq,
-<<<<<<< HEAD
-    ListClass,
-    ManageClass,
-    PainelControleQuizUTFPR,
-  ];
-=======
     ClassDetails,
-  ]
->>>>>>> ac22043ac1ea14f099963b8d49ee7dce37c7ea62
+  ];
 
   const handleNext = () => {
     setActiveImage((prevActiveImage) => (prevActiveImage + 1) % images.length);
