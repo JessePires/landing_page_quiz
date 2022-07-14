@@ -1,6 +1,6 @@
-import React from "react";
-import { MdSmartphone } from "react-icons/md";
-import { FaChalkboardTeacher } from "react-icons/fa";
+import React from 'react'
+import { MdSmartphone } from 'react-icons/md'
+import { FaChalkboardTeacher } from 'react-icons/fa'
 
 // Style
 import {
@@ -11,10 +11,10 @@ import {
   Body,
   UnorderedList,
   ListElementText,
-} from "./style";
+} from './style'
 
 // Components
-import { Card } from "../../components";
+import { Card } from '../../components'
 
 const AvailableProducts: React.FC = () => (
   <Section>
@@ -61,6 +61,6 @@ const AvailableProducts: React.FC = () => (
       </Card>
     </Body>
   </Section>
-);
+)
 
-export default AvailableProducts;
+export default AvailableProducts

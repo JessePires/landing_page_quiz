@@ -11,8 +11,8 @@ import { SliderSmartphone } from '../../components'
 const SmartphoneScreenshots: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 480px)' })
 
-  const widthMobile = isMobile ? 280 : 310
-  const heightMobile = isMobile ? 570 : 600
+  const widthMobile = isMobile ? 260 : 300
+  const heightMobile = isMobile ? 530 : 600
 
   return (
     <Element name="SmartphoneScreenshots">

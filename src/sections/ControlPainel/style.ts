@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Section = styled.section`
   overflow-x: hidden;
@@ -9,7 +9,7 @@ export const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 export const Title = styled.p`
   color: ${({ theme }) => theme.colors.black};
@@ -20,7 +20,7 @@ export const Title = styled.p`
   @media (max-width: 510px) {
     font-size: 2.5rem;
   }
-`;
+`
 
 export const Description = styled.p`
   color: ${({ theme }) => theme.colors.black};
@@ -33,4 +33,4 @@ export const Description = styled.p`
   @media (max-width: 590px) {
     width: 90%;
   }
-`;
+`

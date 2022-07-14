@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // Assets
-import Background from "../../assets/bg_section.svg";
+import Background from '../../assets/bg_section.svg'
 
 // Components
-import { Button } from "../../components";
+import { Button } from '../../components'
 
 export const StyledButton = styled(Button)`
   margin-top: 30px;
@@ -22,12 +22,12 @@ export const StyledButton = styled(Button)`
     width: 35px;
     height: 35px;
   }
-`;
+`
 
 export const Section = styled.section`
   overflow-x: hidden;
   height: 839px;
-  background-image: url("${Background.src}");
+  background-image: url('${Background.src}');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -40,7 +40,7 @@ export const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 export const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
@@ -51,7 +51,7 @@ export const Title = styled.p`
   @media (max-width: 510px) {
     font-size: 2.5rem;
   }
-`;
+`
 
 export const SubTitle = styled(Title)`
   font-size: 1.2rem;
@@ -61,26 +61,26 @@ export const SubTitle = styled(Title)`
   @media (max-width: 510px) {
     font-size: 1rem;
   }
-`;
+`
 
 export const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
-`;
+`
 
 export const RevertColor = styled.span`
   color: ${({ theme }) => theme.colors.purple};
   background: ${({ theme }) => theme.colors.white};
   font-weight: 700;
-`;
+`
 
 export const NormalText = styled.p`
   color: white;
   font-size: 1rem;
   text-align: center;
-`;
+`
 
 export const Body = styled.div`
   display: flex;
@@ -90,7 +90,7 @@ export const Body = styled.div`
   @media (max-width: 900px) {
     flex-direction: column;
   }
-`;
+`
 
 export const Card = styled(motion.div)`
   display: flex;
@@ -103,4 +103,4 @@ export const Card = styled(motion.div)`
       margin-top: 40px;
     }
   }
-`;
+`

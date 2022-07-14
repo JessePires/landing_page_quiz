@@ -1,7 +1,7 @@
-import React from "react";
-import { MdEmail } from "react-icons/md";
-import { useMediaQuery } from "react-responsive";
-import { Element } from "react-scroll";
+import React from 'react'
+import { MdEmail } from 'react-icons/md'
+import { useMediaQuery } from 'react-responsive'
+import { Element } from 'react-scroll'
 
 import {
   Section,
@@ -13,10 +13,10 @@ import {
   Body,
   Card,
   NormalText,
-} from "./style";
+} from './style'
 
 const Doubts: React.FC = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 1150px)" });
+  const isMobile = useMediaQuery({ query: '(max-width: 1150px)' })
 
   return (
     <Element name="Doubts">
@@ -39,7 +39,7 @@ const Doubts: React.FC = () => {
             viewport={{
               once: false,
             }}
-            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+            transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
           >
             {isMobile && (
               <NormalText>
@@ -69,7 +69,7 @@ const Doubts: React.FC = () => {
               x: 0,
               transition: { duration: 0.8 },
             }}
-            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+            transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
             viewport={{
               once: false,
             }}
@@ -100,7 +100,7 @@ const Doubts: React.FC = () => {
         </Body>
       </Section>
     </Element>
-  );
-};
+  )
+}
 
-export default Doubts;
+export default Doubts
