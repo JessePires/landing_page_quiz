@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 // Styles
-import { Section, Title, Description } from './style'
+import { Section, Title, Description } from "./style";
 
 // Components
-import { SliderControlPainel } from '../../components'
+import { SliderControlPainel } from "../../components";
 
 const ControlPainel: React.FC = () => (
   <Section>
@@ -14,6 +14,6 @@ const ControlPainel: React.FC = () => (
     </Description>
     <SliderControlPainel />
   </Section>
-)
+);
 
-export default ControlPainel
+export default ControlPainel;

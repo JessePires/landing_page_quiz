@@ -1,19 +1,19 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 // Assets
-import Background from '../../assets/bg_header.svg'
-import LogoImage from '../../assets/logo.png'
-import Arrow from '../../assets/seta_enrolada.svg'
-import Line from '../../assets/minhoca.svg'
+import Background from "../../assets/bg_header.svg";
+import LogoImage from "../../assets/logo.png";
+import Arrow from "../../assets/seta_enrolada.svg";
+import Line from "../../assets/minhoca.svg";
 
 // Components
-import { Button } from '../../components/index'
+import { Button } from "../../components/index";
 
 export const Section = styled.section`
   overflow-x: hidden;
   min-height: 839px;
-  background-image: url('${Background.src}');
+  background-image: url("${Background.src}");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -23,13 +23,13 @@ export const Section = styled.section`
   @media (max-width: 1150px) {
     padding: 10px 30px;
   }
-`
+`;
 
 export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   display: flex;
-`
+`;
 
 export const Logo = styled.img.attrs({
   src: LogoImage.src,
@@ -40,9 +40,9 @@ export const Logo = styled.img.attrs({
   @media (max-width: 480px) {
     height: 100px;
   }
-`
+`;
 
-export const Navbar = styled.nav``
+export const Navbar = styled.nav``;
 
 export const NavbarLink = styled.a`
   &:not(:last-child) {
@@ -54,13 +54,13 @@ export const NavbarLink = styled.a`
   text-decoration: none;
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
+`;
 export const Body = styled.div`
   margin-top: 40px;
   display: flex;
   height: 100%;
   width: 100%;
-`
+`;
 
 export const LeftSide = styled(motion.div)`
   width: 50%;
@@ -70,7 +70,7 @@ export const LeftSide = styled(motion.div)`
   @media (max-width: 1150px) {
     display: none;
   }
-`
+`;
 
 export const RightSide = styled(motion.div)`
   width: 50%;
@@ -80,7 +80,7 @@ export const RightSide = styled(motion.div)`
   @media (max-width: 1150px) {
     width: 100%;
   }
-`
+`;
 
 export const WelcomeText = styled.p`
   color: white;
@@ -88,7 +88,7 @@ export const WelcomeText = styled.p`
   font-size: 1.5rem;
   margin-bottom: 10px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
+`;
 
 export const Title = styled.p`
   color: white;
@@ -101,21 +101,21 @@ export const Title = styled.p`
   }
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
+`;
 
 export const Description = styled.p`
   color: white;
   font-size: 1rem;
   margin-bottom: 10px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
+`;
 
 export const ArrowEffect = styled.img.attrs({
   src: Arrow.src,
   draggable: false,
 })`
   height: 50px;
-`
+`;
 
 export const LineEffect = styled.img.attrs({
   src: Line.src,
@@ -126,17 +126,17 @@ export const LineEffect = styled.img.attrs({
   @media (max-width: 1150px) {
     display: none;
   }
-`
+`;
 
 export const StyledButton = styled(Button)`
   @media (max-width: 1150px) {
     width: 100%;
   }
-`
+`;
 
 export const NavbarDocumentationLink = styled(NavbarLink)`
   background: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.purple};
   padding: 10px;
   font-weight: 700;
-`
+`;

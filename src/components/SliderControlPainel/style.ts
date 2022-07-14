@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
   width: 100%;
   height: fit-content;
   align-items: center;
-`
+`;
 
 export const PrevButton = styled.button`
   position: absolute;
@@ -24,7 +24,7 @@ export const PrevButton = styled.button`
     /* stroke: white; */
     stroke: black;
   }
-`
+`;
 
 export const NextButton = styled.button`
   position: absolute;
@@ -43,15 +43,15 @@ export const NextButton = styled.button`
     /* stroke: white; */
     stroke: black;
   }
-`
+`;
 
 export const ImageWrapper = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-`
+`;
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-`
+`;
