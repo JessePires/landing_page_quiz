@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NextButtonComponent, PrevButtonComponent } from "../../components";
 
 export const Section = styled.div`
   overflow-x: hidden;
@@ -63,6 +64,14 @@ export const SliderContainer = styled.div`
     transform: scale(1);
     opacity: 1;
   }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
 `;
 
 export const ContentSlider = styled.div`
@@ -74,5 +83,17 @@ export const ContentSlider = styled.div`
 
   @media (max-width: 790px) {
     width: 80%;
+  }
+`;
+
+export const PrevButton = styled(PrevButtonComponent)`
+  svg path {
+    stroke: black;
+  }
+`;
+
+export const NextButton = styled(NextButtonComponent)`
+  svg path {
+    stroke: black;
   }
 `;

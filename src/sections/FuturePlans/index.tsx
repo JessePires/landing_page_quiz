@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay, Keyboard, EffectCards } from "swiper";
 
 // Components
 import { Card } from "../../components";
@@ -13,6 +13,8 @@ import {
   RevertColor,
   SliderContainer,
   ContentSlider,
+  PrevButton,
+  NextButton,
 } from "./style";
 
 const FuturePlans: React.FC = () => (
@@ -34,7 +36,7 @@ const FuturePlans: React.FC = () => (
         pagination={{
           clickable: true,
         }}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay, Keyboard, EffectCards]}
         className="mySwiper"
         style={{ width: "100%" }}
         breakpoints={{
@@ -43,7 +45,20 @@ const FuturePlans: React.FC = () => (
             spaceBetween: 30,
           },
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        keyboard={{
+          enabled: true,
+        }}
       >
+        <div className="swiper-button-prev">
+          <PrevButton style={{ stroke: "black" }} />
+        </div>
+        <div className="swiper-button-next">
+          <NextButton />
+        </div>
         <SwiperSlide>
           <ContentSlider style={{ height: 350 }}>
             <Card title="Engajamento por bonificação" width="90%">
