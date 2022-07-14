@@ -1,16 +1,16 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 // Assets
-import Background from '../../assets/bg_section.svg'
-import Arrow from '../../assets/seta_enrolada.svg'
+import Background from "../../assets/bg_section.svg";
+import Arrow from "../../assets/seta_enrolada.svg";
 
 // Components
-import { Button } from '../../components'
+import { Button } from "../../components";
 
 export const Section = styled.section`
   overflow-x: hidden;
-  background-image: url('${Background.src}');
+  background-image: url("${Background.src}");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,7 +24,7 @@ export const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-`
+`;
 export const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 700;
@@ -36,7 +36,7 @@ export const Title = styled.p`
   }
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
+`;
 export const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
@@ -44,12 +44,12 @@ export const Description = styled.p`
   text-align: center;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-`
+`;
 export const RevertColor = styled.span`
   color: ${({ theme }) => theme.colors.purple};
   background: ${({ theme }) => theme.colors.white};
   font-weight: 700;
-`
+`;
 
 export const Card = styled(motion.div)`
   display: flex;
@@ -59,7 +59,7 @@ export const Card = styled(motion.div)`
   @media (max-width: 600px) {
     width: 100%;
   }
-`
+`;
 
 export const CardIcon = styled.div`
   svg {
@@ -67,22 +67,22 @@ export const CardIcon = styled.div`
     width: 5em;
     color: white;
   }
-`
+`;
 
 export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-`
+`;
 
 export const CardTitle = styled(Title)`
   font-size: 1.2em;
   text-align: left;
-`
+`;
 export const CardDescription = styled.p`
   color: white;
   font-size: 1rem;
-`
+`;
 export const ArrowEffect = styled.img.attrs({
   src: Arrow.src,
   draggable: false,
@@ -94,13 +94,13 @@ export const ArrowEffect = styled.img.attrs({
   @media (max-width: 600px) {
     display: none;
   }
-`
+`;
 
 export const StyledButton = styled(Button)`
   @media (max-width: 600px) {
     width: 100%;
   }
-`
+`;
 
 export const WrapperButton = styled(motion.div)`
   position: relative;
@@ -108,4 +108,4 @@ export const WrapperButton = styled(motion.div)`
   @media (max-width: 600px) {
     width: 100%;
   }
-`
+`;
