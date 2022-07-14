@@ -76,6 +76,7 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
           navigation
           roundLengths
           effect={isMobile ? 'slide' : 'cards'}
+          observer
         >
           <div className="swiper-button-prev">
             <PrevButton />
