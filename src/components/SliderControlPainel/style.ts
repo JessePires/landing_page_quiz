@@ -1,48 +1,54 @@
 import styled from "styled-components";
 
+// Components
+import NextButton from "../NextSwipperButton";
+import PrevButton from "../PrevSwipperButton";
+
 export const Container = styled.div`
   display: flex;
   width: 100%;
+  height: 100%;
   height: fit-content;
   align-items: center;
 `;
 
-export const PrevButton = styled.button`
-  position: absolute;
-  cursor: pointer;
-  margin-right: 20px; // Por causa do width +20 no index.tsx
-  background-color: transparent;
-  border: none;
-  z-index: 1;
+export const SliderContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 
-  svg {
-    height: 40px;
-    width: 40px;
+  .swiper-slide {
+    display: flex;
+    opacity: 0.5;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    transform: scale(0.8);
   }
 
-  svg path {
-    /* stroke: white; */
-    stroke: black;
+  .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
   }
 `;
 
-export const NextButton = styled.button`
-  position: absolute;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  z-index: 1;
-  right: 0;
-
-  svg {
-    height: 40px;
-    width: 40px;
-  }
-
-  svg path {
-    /* stroke: white; */
-    stroke: black;
-  }
+export const ContentSlider = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 `;
 
 export const ImageWrapper = styled.div`
@@ -54,4 +60,16 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+`;
+
+export const StyledNextButton = styled(NextButton)`
+  svg path {
+    stroke: ${({ theme }) => theme.colors.black};
+  }
+`;
+
+export const StyledPrevButton = styled(PrevButton)`
+  svg path {
+    stroke: ${({ theme }) => theme.colors.black};
+  }
 `;

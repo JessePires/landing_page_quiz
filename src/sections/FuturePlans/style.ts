@@ -1,10 +1,18 @@
 import styled from "styled-components";
+// Assets
+import Background from "../../assets/bg_future_plans.svg";
+
+// Components
 import { NextButtonComponent, PrevButtonComponent } from "../../components";
 
 export const Section = styled.div`
   overflow-x: hidden;
   padding-top: 100px;
   padding-bottom: 50px;
+  background-image: url("${Background.src}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 
   @media (max-width: 1150px) {
     padding: 10px 30px;
