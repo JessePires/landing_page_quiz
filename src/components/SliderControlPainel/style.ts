@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 // Components
-import NextButton from "../NextSwipperButton";
-import PrevButton from "../PrevSwipperButton";
+import NextButton from '../NextSwipperButton'
+import PrevButton from '../PrevSwipperButton'
 
 export const Container = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   height: 100%;
   height: fit-content;
   align-items: center;
-`;
+`
 
 export const SliderContainer = styled.div`
   height: 100%;
@@ -40,7 +40,7 @@ export const SliderContainer = styled.div`
   .swiper-button-prev::after {
     display: none;
   }
-`;
+`
 
 export const ContentSlider = styled.div`
   display: flex;
@@ -49,27 +49,29 @@ export const ContentSlider = styled.div`
   object-fit: cover;
   width: 100%;
   height: 100%;
-`;
+`
 
 export const ImageWrapper = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-`;
+`
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-`;
+`
 
 export const StyledNextButton = styled(NextButton)`
+  padding-right: 30px;
   svg path {
     stroke: ${({ theme }) => theme.colors.black};
   }
-`;
+`
 
 export const StyledPrevButton = styled(PrevButton)`
+  padding-left: 30px;
   svg path {
     stroke: ${({ theme }) => theme.colors.black};
   }
-`;
+`

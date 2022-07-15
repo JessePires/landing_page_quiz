@@ -1,9 +1,9 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Keyboard, EffectCards } from "swiper";
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Autoplay, Keyboard, EffectCards } from 'swiper'
 
 // Components
-import { Card } from "../../components";
+import { Card } from '../../components'
 
 // Styles
 import {
@@ -15,13 +15,13 @@ import {
   ContentSlider,
   PrevButton,
   NextButton,
-} from "./style";
+} from './style'
 
 const FuturePlans: React.FC = () => (
   <Section>
     <Title>Planos Futuros</Title>
     <Description>
-      Veja abaixo as funcionalidades que pretendemos adicionar.{" "}
+      Veja abaixo as funcionalidades que pretendemos adicionar.{' '}
       <RevertColor>Vem coisa boa por aí!</RevertColor>
     </Description>
 
@@ -29,7 +29,7 @@ const FuturePlans: React.FC = () => (
       <Swiper
         slidesPerView={1}
         spaceBetween={20}
-        loop
+        // loop
         centeredSlides
         navigation
         roundLengths
@@ -38,7 +38,7 @@ const FuturePlans: React.FC = () => (
         }}
         modules={[Navigation, Autoplay, Keyboard, EffectCards]}
         className="mySwiper"
-        style={{ width: "100%" }}
+        style={{ width: '100%' }}
         breakpoints={{
           790: {
             slidesPerView: 3,
@@ -54,7 +54,7 @@ const FuturePlans: React.FC = () => (
         }}
       >
         <div className="swiper-button-prev">
-          <PrevButton style={{ stroke: "black" }} />
+          <PrevButton style={{ stroke: 'black' }} />
         </div>
         <div className="swiper-button-next">
           <NextButton />
@@ -88,6 +88,6 @@ const FuturePlans: React.FC = () => (
       </Swiper>
     </SliderContainer>
   </Section>
-);
+)
 
-export default FuturePlans;
+export default FuturePlans

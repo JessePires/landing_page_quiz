@@ -1,42 +1,42 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Keyboard, EffectCards } from "swiper";
-import { useMediaQuery } from "react-responsive";
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Autoplay, Keyboard, EffectCards } from 'swiper'
+import { useMediaQuery } from 'react-responsive'
 
-import NextButton from "../NextSwipperButton";
-import PrevButton from "../PrevSwipperButton";
+import NextButton from '../NextSwipperButton'
+import PrevButton from '../PrevSwipperButton'
 
 // Style
-import { Container, SliderContainer, ContentSlider } from "./style";
+import { Container, SliderContainer, ContentSlider } from './style'
 
 // Assets
-import Initial from "../../assets/mobile_screenshots/initial.png";
-import Avatar from "../../assets/mobile_screenshots/avatar.png";
-import QuizList from "../../assets/mobile_screenshots/new_quiz.png";
-import Menu from "../../assets/mobile_screenshots/menu.png";
-import QuizDescription from "../../assets/mobile_screenshots/quiz_description.png";
-import Question from "../../assets/mobile_screenshots/question.png";
-import EndQuiz from "../../assets/mobile_screenshots/fim_quiz.png";
-import Ranking from "../../assets/mobile_screenshots/ranking.png";
-import Search from "../../assets/mobile_screenshots/pesquisa.png";
-import Class from "../../assets/mobile_screenshots/turmas.png";
-import ClassInfo from "../../assets/mobile_screenshots/turma_info.png";
+import Initial from '../../assets/mobile_screenshots/initial.png'
+import Avatar from '../../assets/mobile_screenshots/avatar.png'
+import QuizList from '../../assets/mobile_screenshots/new_quiz.png'
+import Menu from '../../assets/mobile_screenshots/menu.png'
+import QuizDescription from '../../assets/mobile_screenshots/quiz_description.png'
+import Question from '../../assets/mobile_screenshots/question.png'
+import EndQuiz from '../../assets/mobile_screenshots/fim_quiz.png'
+import Ranking from '../../assets/mobile_screenshots/ranking.png'
+import Search from '../../assets/mobile_screenshots/pesquisa.png'
+import Class from '../../assets/mobile_screenshots/turmas.png'
+import ClassInfo from '../../assets/mobile_screenshots/turma_info.png'
 
 // Components
-import Smartphone from "../Smartphone";
+import Smartphone from '../Smartphone'
 
 type SmartPhoneSlider = {
-  width?: number;
-  height?: number;
-  style?: React.CSSProperties;
-};
+  width?: number
+  height?: number
+  style?: React.CSSProperties
+}
 
 const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
   width,
   height,
   ...props
 }) => {
-  const isMobile = useMediaQuery({ query: "(max-width: 550px)" });
+  const isMobile = useMediaQuery({ query: '(max-width: 550px)' })
 
   const images = [
     Initial,
@@ -50,9 +50,9 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
     Search,
     Class,
     ClassInfo,
-  ];
+  ]
 
-  const correctWidth = isMobile ? width + 80 : width + 230;
+  const correctWidth = isMobile ? width + 80 : width + 230
 
   return (
     <Container {...props}>
@@ -71,11 +71,11 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
           keyboard={{
             enabled: true,
           }}
-          loop
+          // loop
           centeredSlides
           navigation
           roundLengths
-          effect={isMobile ? "slide" : "cards"}
+          effect={isMobile ? 'slide' : 'cards'}
           observer
         >
           <div className="swiper-button-prev">
@@ -95,13 +95,13 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
         </Swiper>
       </SliderContainer>
     </Container>
-  );
-};
+  )
+}
 
 SmartPhoneSlider.defaultProps = {
   width: 320,
   height: 640,
   style: {},
-};
+}
 
-export default SmartPhoneSlider;
+export default SmartPhoneSlider

@@ -1,6 +1,8 @@
-import React from "react";
-import { MdSmartphone } from "react-icons/md";
-import { FaChalkboardTeacher } from "react-icons/fa";
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
+
+import { MdSmartphone } from 'react-icons/md'
+import { FaChalkboardTeacher } from 'react-icons/fa'
 
 // Style
 import {
@@ -11,56 +13,64 @@ import {
   Body,
   UnorderedList,
   ListElementText,
-} from "./style";
+} from './style'
 
 // Components
-import { Card } from "../../components";
+import { Card } from '../../components'
 
-const AvailableProducts: React.FC = () => (
-  <Section>
-    <Title>Produtos Disponíveis</Title>
-    <Description>Veja abaixo as ferramentas desenvolvidas que</Description>
-    <Description>
-      disponibilizamos de <RevertColor>forma gratuita.</RevertColor>
-    </Description>
+const AvailableProducts: React.FC = () => {
+  const isMediumScreen = useMediaQuery({ query: '(max-width: 1130px)' })
 
-    <Body>
-      <Card
-        icon={<FaChalkboardTeacher />}
-        title="Painel de Controle para Professores"
-      >
-        <UnorderedList>
-          <ListElementText>Cadastre seus questionários.</ListElementText>
+  const cardHeight = isMediumScreen ? 'auto' : '350px'
 
-          <ListElementText>Acompanhe suas turmas.</ListElementText>
-          <ListElementText>
-            Acompanhe o desempenho das turmas e alunos.
-          </ListElementText>
-        </UnorderedList>
-      </Card>
+  return (
+    <Section>
+      <Title>Produtos Disponíveis</Title>
+      <Description>Veja abaixo as ferramentas desenvolvidas que</Description>
+      <Description>
+        disponibilizamos de <RevertColor>forma gratuita.</RevertColor>
+      </Description>
 
-      <Card
-        icon={<MdSmartphone />}
-        title="Aplicativo para Estudantes"
-        note="*Android"
-      >
-        <UnorderedList>
-          <ListElementText>
-            Permita que seus alunos respondam os questionários das turmas.
-          </ListElementText>
+      <Body>
+        <Card
+          icon={<FaChalkboardTeacher />}
+          title="Painel de Controle para Professores"
+          height={cardHeight}
+        >
+          <UnorderedList>
+            <ListElementText>Cadastre seus questionários.</ListElementText>
 
-          <ListElementText>
-            Deixe-os atualizados de seu desempenho através do sistema de ranking
-            geral e ranking das turmas.
-          </ListElementText>
+            <ListElementText>Acompanhe suas turmas.</ListElementText>
+            <ListElementText>
+              Acompanhe o desempenho das turmas e alunos.
+            </ListElementText>
+          </UnorderedList>
+        </Card>
 
-          <ListElementText>
-            Deixe o aplicativo com a cara da sua instituição.
-          </ListElementText>
-        </UnorderedList>
-      </Card>
-    </Body>
-  </Section>
-);
+        <Card
+          icon={<MdSmartphone />}
+          title="Aplicativo para Estudantes"
+          note="*Android"
+          height={cardHeight}
+        >
+          <UnorderedList>
+            <ListElementText>
+              Permita que seus alunos respondam os questionários das turmas.
+            </ListElementText>
 
-export default AvailableProducts;
+            <ListElementText>
+              Deixe-os atualizados de seu desempenho através do sistema de
+              ranking geral e ranking das turmas.
+            </ListElementText>
+
+            <ListElementText>
+              Deixe o aplicativo com a cara da sua instituição.
+            </ListElementText>
+          </UnorderedList>
+        </Card>
+      </Body>
+    </Section>
+  )
+}
+
+export default AvailableProducts
