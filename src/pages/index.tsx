@@ -12,7 +12,7 @@ import DoubtsSection from '../sections/Doubts'
 import FooterSection from '../sections/Footer'
 
 const Home: React.FC = () => {
-  const title = 'Quiz Gamificado'
+  const title = 'Quiz Gamificado UTFPR'
   const description =
     'Plataforma web e móvel para criação e análise de avaliações digitais.'
   const twitterHandle = ''
@@ -25,14 +25,14 @@ const Home: React.FC = () => {
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={description} />
-        <meta property="og:title" content={title} key="ogtitle" />
-        <meta property="og:description" content={description} key="ogdesc" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
 
         {/* Open Graph */}
+        <meta property="og:title" content={title} key="ogtitle" />
+        <meta property="og:description" content={description} key="ogdesc" />
         <meta property="og:url" content={currentURL} key="ogurl" />
         <meta property="og:image" content={previewImage} key="ogimage" />
         <meta property="og:site_name" content={title} key="ogsitename" />
