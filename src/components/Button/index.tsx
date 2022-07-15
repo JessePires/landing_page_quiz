@@ -1,8 +1,9 @@
 import React from 'react'
 import { StyledButton } from './style'
 
-interface ButtonProps {
+export interface ButtonProps {
   children: React.ReactNode
+  href?: string
 }
 
 const Button: React.FC = ({ children, ...props }: ButtonProps) => (
@@ -10,5 +11,9 @@ const Button: React.FC = ({ children, ...props }: ButtonProps) => (
     {children}
   </StyledButton>
 )
+
+Button.defaultProps = {
+  href: '',
+}
 
 export default Button

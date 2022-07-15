@@ -29,7 +29,7 @@ const FuturePlans: React.FC = () => (
       <Swiper
         slidesPerView={1}
         spaceBetween={20}
-        // loop
+        loop
         centeredSlides
         navigation
         roundLengths

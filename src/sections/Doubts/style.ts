@@ -6,8 +6,13 @@ import Background from '../../assets/bg_section.svg'
 
 // Components
 import { Button } from '../../components'
+import { ButtonProps } from '../../components/Button'
 
-export const StyledButton = styled(Button)`
+interface StyledButtonProps extends ButtonProps {
+  href?: string
+}
+
+export const StyledButton = styled(Button)<StyledButtonProps>`
   margin-top: 30px;
   display: flex;
   align-items: center;
