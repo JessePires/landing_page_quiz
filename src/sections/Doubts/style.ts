@@ -91,6 +91,7 @@ export const NormalText = styled.p`
   color: white;
   font-size: 1rem;
   text-align: center;
+  max-width: 600px;
 `
 
 export const Body = styled.div`

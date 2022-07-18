@@ -27,7 +27,7 @@ const FuturePlans: React.FC = () => (
 
     <SliderContainer>
       <Swiper
-        slidesPerView={1}
+        slidesPerView="auto"
         spaceBetween={20}
         loop
         centeredSlides
@@ -40,6 +40,9 @@ const FuturePlans: React.FC = () => (
         className="mySwiper"
         style={{ width: '100%' }}
         breakpoints={{
+          1: {
+            slidesPerView: 1,
+          },
           790: {
             slidesPerView: 3,
             spaceBetween: 30,
