@@ -49,7 +49,7 @@ const Home: React.FC = () => {
       <SmartphoneScreenshotsSection />
       <FuturePlansSection />
       <DoubtsSection />
-      {/* <FooterSection /> */}
+      <FooterSection />
     </div>
   )
 }
