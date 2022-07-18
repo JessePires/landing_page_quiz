@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
+import { Element } from 'react-scroll'
 
 import { MdSmartphone } from 'react-icons/md'
 import { FaChalkboardTeacher } from 'react-icons/fa'
@@ -24,52 +25,54 @@ const AvailableProducts: React.FC = () => {
   const cardHeight = isMediumScreen ? 'auto' : '350px'
 
   return (
-    <Section>
-      <Title>Produtos Disponíveis</Title>
-      <Description>Veja abaixo as ferramentas desenvolvidas que</Description>
-      <Description>
-        disponibilizamos de <RevertColor>forma gratuita.</RevertColor>
-      </Description>
+    <Element name="AvailableProducts">
+      <Section>
+        <Title>Produtos Disponíveis</Title>
+        <Description>Veja abaixo as ferramentas desenvolvidas que</Description>
+        <Description>
+          disponibilizamos de <RevertColor>forma gratuita.</RevertColor>
+        </Description>
 
-      <Body>
-        <Card
-          icon={<FaChalkboardTeacher />}
-          title="Painel de Controle para Professores"
-          height={cardHeight}
-        >
-          <UnorderedList>
-            <ListElementText>Cadastre seus questionários.</ListElementText>
+        <Body>
+          <Card
+            icon={<FaChalkboardTeacher />}
+            title="Painel de Controle para Professores"
+            height={cardHeight}
+          >
+            <UnorderedList>
+              <ListElementText>Cadastre seus questionários.</ListElementText>
 
-            <ListElementText>Acompanhe suas turmas.</ListElementText>
-            <ListElementText>
-              Acompanhe o desempenho das turmas e alunos.
-            </ListElementText>
-          </UnorderedList>
-        </Card>
+              <ListElementText>Acompanhe suas turmas.</ListElementText>
+              <ListElementText>
+                Acompanhe o desempenho das turmas e alunos.
+              </ListElementText>
+            </UnorderedList>
+          </Card>
 
-        <Card
-          icon={<MdSmartphone />}
-          title="Aplicativo para Estudantes"
-          note="*Android"
-          height={cardHeight}
-        >
-          <UnorderedList>
-            <ListElementText>
-              Permita que seus alunos respondam os questionários das turmas.
-            </ListElementText>
+          <Card
+            icon={<MdSmartphone />}
+            title="Aplicativo para Estudantes"
+            note="*Android"
+            height={cardHeight}
+          >
+            <UnorderedList>
+              <ListElementText>
+                Permita que seus alunos respondam os questionários das turmas.
+              </ListElementText>
 
-            <ListElementText>
-              Deixe-os atualizados de seu desempenho através do sistema de
-              ranking geral e ranking das turmas.
-            </ListElementText>
+              <ListElementText>
+                Deixe-os atualizados de seu desempenho através do sistema de
+                ranking geral e ranking das turmas.
+              </ListElementText>
 
-            <ListElementText>
-              Deixe o aplicativo com a cara da sua instituição.
-            </ListElementText>
-          </UnorderedList>
-        </Card>
-      </Body>
-    </Section>
+              <ListElementText>
+                Deixe o aplicativo com a cara da sua instituição.
+              </ListElementText>
+            </UnorderedList>
+          </Card>
+        </Body>
+      </Section>
+    </Element>
   )
 }
 
