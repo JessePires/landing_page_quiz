@@ -15,27 +15,32 @@ const Home: React.FC = () => {
   const title = 'Quiz Gamificado UTFPR'
   const description =
     'Plataforma web e móvel para criação e análise de avaliações digitais.'
-  const twitterHandle = ''
-  const previewImage = ''
-  const currentURL = ''
+  const previewImage = 'https://quizdocumentation.netlify.app/img/capa.png'
+  const currentURL = 'https://quizdocumentation.netlify.app'
 
   return (
     <div id="containerElementID">
       <Head>
         <title>{title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
           content="website, utfpr, quiz, gamification, gamificação"
           data-rh="true"
         />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+        {/* Google / Search Engine Tags  */}
+        <meta itemProp="name" content={title} />
+        <meta itemProp="description" content={description} />
+        <meta itemProp="image" content={previewImage} />
 
-        {/* Open Graph */}
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+
+        {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:title" content={title} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
         <meta property="og:url" content={currentURL} key="ogurl" />
