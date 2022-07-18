@@ -36,8 +36,6 @@ const Home: React.FC = () => {
         <meta property="og:url" content={currentURL} key="ogurl" />
         <meta property="og:image" content={previewImage} key="ogimage" />
         <meta property="og:site_name" content={title} key="ogsitename" />
-        <meta property="og:title" content={title} key="ogtitle" />
-        <meta property="og:description" content={description} key="ogdesc" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
