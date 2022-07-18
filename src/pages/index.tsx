@@ -25,6 +25,11 @@ const Home: React.FC = () => {
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="website, utfpr, quiz, gamification, gamificação"
+          data-rh="true"
+        />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />
