@@ -68,7 +68,7 @@ const Headline: React.FC = () => {
             <NavbarDocumentationLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://quizdocumentation.netlify.app/"
+              href="https://docsquizutfpr.netlify.app/"
             >
               Técnico
             </NavbarDocumentationLink>

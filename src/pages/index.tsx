@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   const title = 'Quiz Gamificado UTFPR'
   const description =
     'Plataforma web e móvel para criação e análise de avaliações digitais.'
-  const previewImage = 'https://quizdocumentation.netlify.app/img/capa.png'
+  const previewImage = 'https://docsquizutfpr.netlify.app/img/capa.png'
   const currentURL = 'https://quizutfpr.netlify.app/'
 
   return (

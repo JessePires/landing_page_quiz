@@ -17,7 +17,7 @@ import {
 const Doubts: React.FC = () => {
   const openInNewTab = () => {
     window.open(
-      'https://quizdocumentation.netlify.app/',
+      'https://docsquizutfpr.netlify.app/',
       '_blank',
       'noopener,noreferrer'
     )
