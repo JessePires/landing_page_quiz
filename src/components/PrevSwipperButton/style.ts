@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const PrevButton = styled.button`
   cursor: pointer;
@@ -16,4 +16,4 @@ export const PrevButton = styled.button`
   svg path {
     stroke: white;
   }
-`;
+`

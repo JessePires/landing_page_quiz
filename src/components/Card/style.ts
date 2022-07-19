@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 interface WrapperProps {
-  width: string;
-  height: string;
+  width: string
+  height: string
 }
 
 export const Wrapper = styled(motion.div)<WrapperProps>`
@@ -35,23 +35,23 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
       margin-bottom: 30px;
     }
   }
-`;
+`
 
 export const StyledIcon = styled.div`
   svg {
     width: 90px;
     height: 90px;
   }
-`;
+`
 
 export const Title = styled.p`
   font-weight: 700;
   font-size: 1.4rem;
   margin-bottom: 10px;
-`;
+`
 
 export const Note = styled.span`
   color: #d3d3d3;
   align-self: flex-end;
   font-size: 0.9rem;
-`;
+`

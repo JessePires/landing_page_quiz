@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 // Style
 import {
@@ -11,7 +11,7 @@ import {
   Paragraph,
   Email,
   Link,
-} from "./style";
+} from './style'
 
 const Footer: React.FC = () => (
   <StyledFooter>
@@ -49,6 +49,6 @@ const Footer: React.FC = () => (
       </Explanation>
     </RightSide>
   </StyledFooter>
-);
+)
 
-export default Footer;
+export default Footer

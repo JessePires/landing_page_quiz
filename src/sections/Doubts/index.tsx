@@ -1,6 +1,6 @@
-import React from "react";
-import { MdEmail } from "react-icons/md";
-import { Element } from "react-scroll";
+import React from 'react'
+import { MdEmail } from 'react-icons/md'
+import { Element } from 'react-scroll'
 
 import {
   Section,
@@ -12,16 +12,16 @@ import {
   Body,
   Card,
   NormalText,
-} from "./style";
+} from './style'
 
 const Doubts: React.FC = () => {
   const openInNewTab = () => {
     window.open(
-      "https://docsquizutfpr.netlify.app/",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  };
+      'https://docsquizutfpr.netlify.app/',
+      '_blank',
+      'noopener,noreferrer'
+    )
+  }
   return (
     <Element name="Doubts">
       <Section>
@@ -43,7 +43,7 @@ const Doubts: React.FC = () => {
             viewport={{
               once: false,
             }}
-            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+            transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
           >
             <NormalText>
               Caso sua instituição <RevertColor>possua</RevertColor> um técnico
@@ -63,7 +63,7 @@ const Doubts: React.FC = () => {
               x: 0,
               transition: { duration: 0.8 },
             }}
-            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+            transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
             viewport={{
               once: false,
             }}
@@ -82,7 +82,7 @@ const Doubts: React.FC = () => {
         </Body>
       </Section>
     </Element>
-  );
-};
+  )
+}
 
-export default Doubts;
+export default Doubts

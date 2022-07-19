@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const NextButton = styled.button`
   cursor: pointer;
@@ -13,4 +13,4 @@ export const NextButton = styled.button`
   svg path {
     stroke: white;
   }
-`;
+`

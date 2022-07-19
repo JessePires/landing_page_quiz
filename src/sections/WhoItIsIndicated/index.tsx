@@ -1,7 +1,7 @@
-import React from "react";
-import { FaChalkboardTeacher } from "react-icons/fa";
-import { CgGirl } from "react-icons/cg";
-import { Element, scroller } from "react-scroll";
+import React from 'react'
+import { FaChalkboardTeacher } from 'react-icons/fa'
+import { CgGirl } from 'react-icons/cg'
+import { Element, scroller } from 'react-scroll'
 
 import {
   Section,
@@ -16,16 +16,16 @@ import {
   WrapperButton,
   ArrowEffect,
   StyledButton,
-} from "./style";
+} from './style'
 
 const WhoItIsIndicated: React.FC = () => {
   const scrollTo = (to: string) => {
     scroller.scrollTo(to, {
       duration: 1000,
-      smooth: "easeInOutQuad",
+      smooth: 'easeInOutQuad',
       ignoreCancelEvents: true,
-    });
-  };
+    })
+  }
 
   return (
     <Element name="WhoItIsIndicated">
@@ -46,7 +46,7 @@ const WhoItIsIndicated: React.FC = () => {
           viewport={{
             once: false,
           }}
-          transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
         >
           <CardIcon>
             <FaChalkboardTeacher />
@@ -70,7 +70,7 @@ const WhoItIsIndicated: React.FC = () => {
           viewport={{
             once: false,
           }}
-          transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
         >
           <CardIcon>
             <CgGirl />
@@ -94,16 +94,16 @@ const WhoItIsIndicated: React.FC = () => {
           viewport={{
             once: false,
           }}
-          transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+          transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
         >
-          <StyledButton onClick={() => scrollTo("Doubts")}>
+          <StyledButton onClick={() => scrollTo('Doubts')}>
             ME INTERESSEI!
           </StyledButton>
           <ArrowEffect />
         </WrapperButton>
       </Section>
     </Element>
-  );
-};
+  )
+}
 
-export default WhoItIsIndicated;
+export default WhoItIsIndicated

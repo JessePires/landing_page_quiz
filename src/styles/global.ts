@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -8,8 +8,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.white};
-    color: ${(props) => props.theme.colors.black};
+    background: ${props => props.theme.colors.white};
+    color: ${props => props.theme.colors.black};
     font: 400 16px Poppins, sans-serif;
   }
 
@@ -32,4 +32,4 @@ export default createGlobalStyle`
   .swiper-3d .swiper-slide-shadow {
     background: transparent;
   }
-`;
+`

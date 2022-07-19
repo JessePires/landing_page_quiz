@@ -1,19 +1,19 @@
-import React from "react";
-import { StyledButton } from "./style";
+import React from 'react'
+import { StyledButton } from './style'
 
 export interface ButtonProps {
-  children: React.ReactNode;
-  href?: string;
+  children: React.ReactNode
+  href?: string
 }
 
 const Button: React.FC = ({ children, ...props }: ButtonProps) => (
   <StyledButton type="button" {...props}>
     {children}
   </StyledButton>
-);
+)
 
 Button.defaultProps = {
-  href: "",
-};
+  href: '',
+}
 
-export default Button;
+export default Button
