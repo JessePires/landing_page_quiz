@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ImageNext from 'next/image'
 
 // Components
 import NextButton from '../NextSwipperButton'
@@ -57,7 +58,7 @@ export const ImageWrapper = styled.div`
   overflow: hidden;
 `
 
-export const Image = styled.img`
+export const Image = styled(ImageNext)`
   width: 100%;
   height: 100%;
 `

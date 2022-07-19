@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image'
 import React from 'react'
 
 // Styles
@@ -7,7 +8,7 @@ type SmartphoneProps = {
   width?: number
   height?: number
   style?: React.CSSProperties
-  image?: string
+  image?: StaticImageData
 }
 
 const Smartphone: React.FC<SmartphoneProps> = ({
@@ -19,7 +20,7 @@ const Smartphone: React.FC<SmartphoneProps> = ({
   <Container width={width} height={height} {...props}>
     <Speaker />
     <Volume />
-    <Screen alt="" src={image} />
+    <Screen width={width - 15} height={height - 15} alt="" src={image} />
     <Power />
   </Container>
 )
@@ -27,7 +28,12 @@ const Smartphone: React.FC<SmartphoneProps> = ({
 Smartphone.defaultProps = {
   width: 320,
   height: 640,
-  image: '',
+  image: {
+    src: '',
+    height: 0,
+    width: 0,
+    blurDataURL: '',
+  },
   style: {},
 }
 

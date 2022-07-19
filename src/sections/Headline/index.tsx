@@ -88,13 +88,13 @@ const Headline: React.FC = () => {
             }}
           >
             <Smartphone
-              image={Initial.src}
+              image={Initial}
               width={320}
               height={640}
               style={{ zIndex: 2 }}
             />
             <Smartphone
-              image={Avatar.src}
+              image={Avatar}
               width={300}
               height={600}
               style={{

@@ -84,7 +84,7 @@ const SliderControlPainel: React.FC = () => {
             <SwiperSlide key={idx}>
               <ContentSlider>
                 <ImageWrapper>
-                  <Image alt="" src={item.src} />
+                  <Image alt="Imagens do Painel de Controle" src={item} />
                 </ImageWrapper>
               </ContentSlider>
             </SwiperSlide>

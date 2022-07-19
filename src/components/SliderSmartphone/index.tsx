@@ -88,7 +88,7 @@ const SmartPhoneSlider: React.FC<SmartPhoneSlider> = ({
           {images.map((item, idx) => (
             <SwiperSlide key={idx}>
               <ContentSlider>
-                <Smartphone width={width} height={height} image={item.src} />
+                <Smartphone width={width} height={height} image={item} />
               </ContentSlider>
             </SwiperSlide>
           ))}

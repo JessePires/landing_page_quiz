@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 // Assets
-import Background from '../../assets/bg_header.svg'
+import Background from '../../assets/bg_header.png'
 import LogoImage from '../../assets/logo.png'
 import Arrow from '../../assets/seta_enrolada.svg'
 import Line from '../../assets/minhoca.svg'
@@ -36,6 +36,14 @@ export const Logo = styled.img.attrs({
   draggable: false,
 })`
   height: 150px;
+
+  @media (max-width: 480px) {
+    height: 100px;
+  }
+
+  @media (max-width: 310px) {
+    height: 60px;
+  }
 `
 
 export const Navbar = styled.nav`

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ImageNext from 'next/image'
 
 interface ContainerProps {
   width: number
@@ -17,11 +18,12 @@ export const Container = styled.div<ContainerProps>`
   border: 2px solid #3a4245;
 `
 
-export const Screen = styled.img`
+export const Screen = styled(ImageNext)`
   width: 97%;
   height: 98%;
   background: #121515;
   border-radius: 31px;
+  pointer-events: none;
 `
 
 export const Speaker = styled.div`
