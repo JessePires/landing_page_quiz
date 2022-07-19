@@ -1,6 +1,6 @@
-import React from 'react'
-import { useMediaQuery } from 'react-responsive'
-import { scroller, Element } from 'react-scroll'
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+import { scroller, Element } from "react-scroll";
 
 import {
   Section,
@@ -17,24 +17,24 @@ import {
   LineEffect,
   StyledButton,
   NavbarDocumentationLink,
-} from './style'
+} from "./style";
 
-import { Smartphone } from '../../components'
+import { Smartphone } from "../../components";
 
 // Assets
-import Initial from '../../assets/mobile_screenshots/initial.png'
-import Avatar from '../../assets/mobile_screenshots/avatar.png'
+import Initial from "../../assets/mobile_screenshots/initial.png";
+import Avatar from "../../assets/mobile_screenshots/avatar.png";
 
 const Headline: React.FC = () => {
-  const isTablet = useMediaQuery({ query: '(max-width: 1150px)' })
+  const isTablet = useMediaQuery({ query: "(max-width: 1150px)" });
 
   const scrollTo = (to: string) => {
     scroller.scrollTo(to, {
       duration: 1000,
-      smooth: 'easeInOutQuad',
+      smooth: "easeInOutQuad",
       ignoreCancelEvents: true,
-    })
-  }
+    });
+  };
 
   return (
     <Element name="Headline">
@@ -45,22 +45,22 @@ const Headline: React.FC = () => {
           <Navbar>
             {!isTablet && (
               <>
-                <NavbarLink onClick={() => scrollTo('AvailableProducts')}>
+                <NavbarLink onClick={() => scrollTo("AvailableProducts")}>
                   Produtos
                 </NavbarLink>
-                <NavbarLink onClick={() => scrollTo('WhoItIsIndicated')}>
+                <NavbarLink onClick={() => scrollTo("WhoItIsIndicated")}>
                   Alvos
                 </NavbarLink>
-                <NavbarLink onClick={() => scrollTo('ControlPainel')}>
+                <NavbarLink onClick={() => scrollTo("ControlPainel")}>
                   Painel de Controle
                 </NavbarLink>
-                <NavbarLink onClick={() => scrollTo('SmartphoneScreenshots')}>
+                <NavbarLink onClick={() => scrollTo("SmartphoneScreenshots")}>
                   App Smartphone
                 </NavbarLink>
-                <NavbarLink onClick={() => scrollTo('FuturePlans')}>
+                <NavbarLink onClick={() => scrollTo("FuturePlans")}>
                   Planos
                 </NavbarLink>
-                <NavbarLink onClick={() => scrollTo('Doubts')}>
+                <NavbarLink onClick={() => scrollTo("Doubts")}>
                   Dúvidas
                 </NavbarLink>
               </>
@@ -82,7 +82,7 @@ const Headline: React.FC = () => {
               opacity: 1,
               transition: { duration: 0.8 },
             }}
-            transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
             viewport={{
               once: false,
             }}
@@ -98,10 +98,10 @@ const Headline: React.FC = () => {
               width={300}
               height={600}
               style={{
-                transform: 'rotateZ(19deg)',
-                position: 'absolute',
-                top: '16px',
-                left: '115px',
+                transform: "rotateZ(19deg)",
+                position: "absolute",
+                top: "16px",
+                left: "115px",
               }}
             />
             {/* <ArrowEffect /> */}
@@ -113,7 +113,7 @@ const Headline: React.FC = () => {
               x: 0,
               transition: { duration: 0.8 },
             }}
-            transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
+            transition={{ type: "spring", duration: 5, bounce: 0.6 }}
             viewport={{
               once: false,
             }}
@@ -137,7 +137,7 @@ const Headline: React.FC = () => {
         </Body>
       </Section>
     </Element>
-  )
-}
+  );
+};
 
-export default Headline
+export default Headline;

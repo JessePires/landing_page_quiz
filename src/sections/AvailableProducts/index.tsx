@@ -1,9 +1,9 @@
-import React from 'react'
-import { useMediaQuery } from 'react-responsive'
-import { Element } from 'react-scroll'
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+import { Element } from "react-scroll";
 
-import { MdSmartphone } from 'react-icons/md'
-import { FaChalkboardTeacher } from 'react-icons/fa'
+import { MdSmartphone } from "react-icons/md";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 // Style
 import {
@@ -14,15 +14,15 @@ import {
   Body,
   UnorderedList,
   ListElementText,
-} from './style'
+} from "./style";
 
 // Components
-import { Card } from '../../components'
+import { Card } from "../../components";
 
 const AvailableProducts: React.FC = () => {
-  const isMediumScreen = useMediaQuery({ query: '(max-width: 1130px)' })
+  const isMediumScreen = useMediaQuery({ query: "(max-width: 1130px)" });
 
-  const cardHeight = isMediumScreen ? 'auto' : '350px'
+  const cardHeight = isMediumScreen ? "auto" : "350px";
 
   return (
     <Element name="AvailableProducts">
@@ -73,7 +73,7 @@ const AvailableProducts: React.FC = () => {
         </Body>
       </Section>
     </Element>
-  )
-}
+  );
+};
 
-export default AvailableProducts
+export default AvailableProducts;

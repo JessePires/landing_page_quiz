@@ -1,11 +1,11 @@
-import React from 'react'
-import { Element } from 'react-scroll'
+import React from "react";
+import { Element } from "react-scroll";
 
 // Styles
-import { Section, Title, Description } from './style'
+import { Section, Title, Description } from "./style";
 
 // Components
-import { SliderControlPainel } from '../../components'
+import { SliderControlPainel } from "../../components";
 
 const ControlPainel: React.FC = () => (
   <Element name="ControlPainel">
@@ -17,6 +17,6 @@ const ControlPainel: React.FC = () => (
       <SliderControlPainel />
     </Section>
   </Element>
-)
+);
 
-export default ControlPainel
+export default ControlPainel;

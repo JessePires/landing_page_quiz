@@ -1,15 +1,15 @@
-import { StaticImageData } from 'next/image'
-import React from 'react'
+import { StaticImageData } from "next/image";
+import React from "react";
 
 // Styles
-import { Container, Screen, Speaker, Power, Volume } from './style'
+import { Container, Screen, Speaker, Power, Volume } from "./style";
 
 type SmartphoneProps = {
-  width?: number
-  height?: number
-  style?: React.CSSProperties
-  image?: StaticImageData
-}
+  width?: number;
+  height?: number;
+  style?: React.CSSProperties;
+  image?: StaticImageData;
+};
 
 const Smartphone: React.FC<SmartphoneProps> = ({
   width,
@@ -23,18 +23,18 @@ const Smartphone: React.FC<SmartphoneProps> = ({
     <Screen width={width - 15} height={height - 15} alt="" src={image} />
     <Power />
   </Container>
-)
+);
 
 Smartphone.defaultProps = {
   width: 320,
   height: 640,
   image: {
-    src: '',
+    src: "",
     height: 0,
     width: 0,
-    blurDataURL: '',
+    blurDataURL: "",
   },
   style: {},
-}
+};
 
-export default Smartphone
+export default Smartphone;
