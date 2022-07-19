@@ -1,15 +1,31 @@
 import React from 'react'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 
 // Sections
-import HeadlineSection from '../sections/Headline'
-import AvailableProductsSection from '../sections/AvailableProducts'
-import WhoItIsIndicatedSection from '../sections/WhoItIsIndicated'
-import ControlPainelSection from '../sections/ControlPainel'
-import SmartphoneScreenshotsSection from '../sections/SmartphoneScreenshots'
-import FuturePlansSection from '../sections/FuturePlans'
-import DoubtsSection from '../sections/Doubts'
-import FooterSection from '../sections/Footer'
+// import HeadlineSection from '../sections/Headline'
+// import AvailableProductsSection from '../sections/AvailableProducts'
+// import WhoItIsIndicatedSection from '../sections/WhoItIsIndicated'
+// import ControlPainelSection from '../sections/ControlPainel'
+// import SmartphoneScreenshotsSection from '../sections/SmartphoneScreenshots'
+// import FuturePlansSection from '../sections/FuturePlans'
+// import DoubtsSection from '../sections/Doubts'
+// import FooterSection from '../sections/Footer'
+
+const HeadlineSection = dynamic(() => import('../sections/Headline'))
+const AvailableProductsSection = dynamic(
+  () => import('../sections/AvailableProducts')
+)
+const WhoItIsIndicatedSection = dynamic(
+  () => import('../sections/WhoItIsIndicated')
+)
+const ControlPainelSection = dynamic(() => import('../sections/ControlPainel'))
+const SmartphoneScreenshotsSection = dynamic(
+  () => import('../sections/SmartphoneScreenshots')
+)
+const FuturePlansSection = dynamic(() => import('../sections/FuturePlans'))
+const DoubtsSection = dynamic(() => import('../sections/Doubts'))
+const FooterSection = dynamic(() => import('../sections/Footer'))
 
 const Home: React.FC = () => {
   const title = 'Quiz Gamificado UTFPR'

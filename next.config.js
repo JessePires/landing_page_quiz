@@ -1,15 +1,21 @@
-const withImages = require('next-images');
+const withPlugins = require('next-compose-plugins');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: 'build',
   reactStrictMode: true,
   compiler: {
     styledComponents: true,
   }
 }
 
-module.exports = withImages({
-  esModule: true,
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+  openAnalyzer: true
 })
 
-module.exports = nextConfig
+
+module.exports = withPlugins([
+  withBundleAnalyzer
+], nextConfig)
+
