@@ -123,10 +123,12 @@ const Headline: React.FC = () => {
             </WelcomeText>
             <Title>Totalmente gratuito e customizável!</Title>
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              egestas odio sapien dis massa massa massa. Accumsan, cras
-              tristique adipiscing consectetur. Laoreet ante quisque in nulla
-              eleifend neque sed rutrum donec.
+              O projeto é uma plataforma web e móvel para criação e análise de
+              avaliações digitais. O sistema está sendo criado sob orientação
+              dos professores Juliano Henrique Foleis e Marcos Silvano Almeida.
+              O mesmo é composto por um painel de controle utilizado para
+              criação de quizzes, bem como um aplicativo móvel gamificado para
+              que os alunos possam acessá-los e respondê-los.
             </Description>
 
             <StyledButton>SOBRE NÓS</StyledButton>
