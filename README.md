@@ -47,7 +47,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:JessePires/refresh_token.git
+$ git clone https://github.com/JessePires/landing_page_quiz.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd refresh_token
 # Instale as dependências
@@ -70,7 +70,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[NextJs](https://nextjs.org/)**
 
-> Veja o arquivo  [package.json](https://github.com/JessePires/refresh_token/blob/master/package.json) para mais detalhes.
+> Veja o arquivo  [package.json](https://github.com/JessePires/landing_page_quiz/blob/master/package.json) para mais detalhes.
 
 ---
 
