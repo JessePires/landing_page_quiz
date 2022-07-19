@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   const description =
     'Plataforma web e móvel para criação e análise de avaliações digitais.'
   const previewImage = 'https://quizdocumentation.netlify.app/img/capa.png'
-  const currentURL = 'https://quizdocumentation.netlify.app'
+  const currentURL = 'https://quizutfpr.netlify.app/'
 
   return (
     <div id="containerElementID">

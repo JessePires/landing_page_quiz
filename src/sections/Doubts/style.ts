@@ -10,6 +10,7 @@ import { ButtonProps } from '../../components/Button'
 
 interface StyledButtonProps extends ButtonProps {
   href?: string
+  onClick?(): void
 }
 
 export const StyledButton = styled(Button)<StyledButtonProps>`
