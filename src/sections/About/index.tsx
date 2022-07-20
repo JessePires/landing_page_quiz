@@ -76,7 +76,11 @@ const About: React.FC = () => {
               }}
               transition={{ type: 'spring', duration: 5, bounce: 0.6 }}
             >
-              <AuthorImage src={item.image} alt={`Avatar ${item.name}`} />
+              <AuthorImage
+                draggable="false"
+                src={item.image}
+                alt={`Avatar ${item.name}`}
+              />
 
               <AuthorInformations>
                 <AuthorName
