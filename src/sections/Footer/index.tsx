@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
   <StyledFooter>
     <LeftSide>
       <div>
-        <Paragraph>Quiz UTFPR - 2022</Paragraph>
+        <Paragraph>Quiz UTFPR - {new Date().getFullYear()}</Paragraph>
         <Paragraph>Software Livre</Paragraph>
       </div>
     </LeftSide>
