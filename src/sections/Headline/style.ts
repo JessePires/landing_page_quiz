@@ -9,6 +9,11 @@ import Line from '../../assets/minhoca.svg'
 
 // Components
 import { Button } from '../../components/index'
+import { ButtonProps } from '../../components/Button'
+
+interface StyledButtonProps extends ButtonProps {
+  onClick?(): void
+}
 
 export const Section = styled.section`
   overflow-x: hidden;
@@ -138,7 +143,7 @@ export const LineEffect = styled.img.attrs({
   }
 `
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled(Button)<StyledButtonProps>`
   @media (max-width: 1150px) {
     width: 100%;
   }

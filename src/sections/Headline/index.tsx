@@ -131,7 +131,9 @@ const Headline: React.FC = () => {
               que os alunos possam acessá-los e respondê-los.
             </Description>
 
-            <StyledButton>SOBRE NÓS</StyledButton>
+            <StyledButton onClick={() => scrollTo('About')}>
+              SOBRE NÓS
+            </StyledButton>
             <LineEffect />
           </RightSide>
         </Body>

@@ -26,6 +26,7 @@ const SmartphoneScreenshotsSection = dynamic(
 const FuturePlansSection = dynamic(() => import('../sections/FuturePlans'))
 const DoubtsSection = dynamic(() => import('../sections/Doubts'))
 const FooterSection = dynamic(() => import('../sections/Footer'))
+const AboutSection = dynamic(() => import('../sections/About'))
 
 const Home: React.FC = () => {
   const title = 'Quiz Gamificado UTFPR'
@@ -73,6 +74,7 @@ const Home: React.FC = () => {
       <SmartphoneScreenshotsSection />
       <FuturePlansSection />
       <DoubtsSection />
+      <AboutSection />
       <FooterSection />
     </div>
   )

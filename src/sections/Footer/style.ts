@@ -6,6 +6,7 @@ export const StyledFooter = styled.footer`
   align-items: center;
   width: 100%;
   padding: 30px 100px;
+  background: ${({ theme }) => theme.colors.purple};
 
   @media (max-width: 870px) {
     flex-direction: column-reverse;
@@ -66,21 +67,25 @@ export const Explanation = styled.div`
 
 export const Paragraph = styled.p`
   font-size: 0.9rem;
+  color: ${({ theme }) => theme.colors.white};
 `
 
 export const Email = styled.a`
   font-size: 0.9rem;
   text-decoration: none;
   color: inherit;
+  color: ${({ theme }) => theme.colors.white};
 `
 
 export const Title = styled.h1`
   font-size: 1.1rem;
   margin-bottom: 0px;
+  color: ${({ theme }) => theme.colors.white};
 `
 
 export const Link = styled.a`
   font-size: 0.9rem;
   text-decoration: none;
   color: inherit;
+  color: ${({ theme }) => theme.colors.white};
 `
