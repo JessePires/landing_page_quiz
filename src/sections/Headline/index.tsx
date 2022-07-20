@@ -46,7 +46,7 @@ const Headline: React.FC = () => {
             {!isTablet && (
               <>
                 <NavbarLink onClick={() => scrollTo('AvailableProducts')}>
-                  Produtos
+                  Artefatos
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('WhoItIsIndicated')}>
                   Alvos

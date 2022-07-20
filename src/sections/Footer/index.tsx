@@ -42,9 +42,8 @@ const Footer: React.FC = () => (
 
       <Explanation>
         <Paragraph>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
+          Artefatos desenvolvidos como resultado do Projeto de Extensão da
+          Universidade Tecnológica Federal do Paraná - Campus Campo Mourão/PR.
         </Paragraph>
       </Explanation>
     </RightSide>
