@@ -47,7 +47,7 @@ const About: React.FC = () => {
       description:
         'Doutor em Ciência da Computação pela Universidade de São Paulo, atualmente é Professor da Universidade Tecnológica Federal do Paraná, Campus Campo Mourão. Tem experiência na área de Ciência da Computação, com ênfase em Metodologia e Técnicas da Computação. Atua principalmente nos seguintes temas: Aplicativos Móveis, Engenharia de Software e Desenvolvimento de Jogos.',
       image: 'https://github.com/marcossilvano.png',
-      link: 'https://github.com/marcossilvano',
+      link: 'https://www.linkedin.com/in/marcos-silvano-3a3506140/',
     },
   ]
 
