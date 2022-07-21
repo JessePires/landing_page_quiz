@@ -25,14 +25,14 @@ const About: React.FC = () => {
       description:
         'Jessé Pires é aluno do curso de Ciências da Computação da UTFPR-CM. Seus interesses atuais são programação web e mobile (front e backend), porém se interessa por quase tudo na Computação.',
       image: 'https://github.com/JessePires.png',
-      link: 'https://github.com/JessePires',
+      link: 'https://www.linkedin.com/in/jesse-pires-barbato-rocha-933714202',
     },
     {
       name: 'Jhonatan Guilherme de Oliveira Cunha',
       description:
         'Jhonatan Cunha é aluno do curso de Ciências da Computação da UTFPR/CM. Seu foco de estudo atualmente se concentra no desenvolvimento de aplicações web/mobile abordando o lado do frontend e backend. Adora utilizar as ferramentas disponíveis na programação em busca de uma solução viável para uma aplicação real.',
       image: 'https://github.com/jhonatancunha.png',
-      link: 'https://github.com/jhonatancunha',
+      link: 'https://www.linkedin.com/in/jhocunha/',
     },
     {
       name: 'Juliano Henrique Foleis',
@@ -40,7 +40,7 @@ const About: React.FC = () => {
         'Doutorado em Engenharia Elétrica na área de Engenharia de Computação pela Faculdade de Engenharia Elétrica e de Computação da UNICAMP. Atualmente é Professor Adjunto do Magistério Superior da Universidade Tecnológica Federal do Paraná. Pesquisador na área de Aprendizado de Máquina e Processamento Digital de Sinais, com ênfase em sinais de áudio. Possui 10 anos de experiência em docência. Possui experiência com desenvolvimento de software em Python, C/C++, linguagens de montagem para dispositivos embarcados, Javascript.',
       image:
         'https://media-exp2.licdn.com/dms/image/C4E03AQGTj3tkBTxP8Q/profile-displayphoto-shrink_800_800/0/1566308003810?e=1663804800&v=beta&t=CjaWxl8RqfPlJ6AP6pdmbY8EwWO2D15zSBWLDRX1iJ0',
-      link: 'https://github.com/julianofoleiss',
+      link: 'https://www.linkedin.com/in/juliano-foleis-784548a0/',
     },
     {
       name: 'Marcos Silvano Almeida',
