@@ -59,8 +59,8 @@ export const ImageWrapper = styled.div`
 `
 
 export const Image = styled(ImageNext)`
-  width: 100%;
-  height: 100%;
+  /* height: ${({ height }) => height}px;
+  width: ${({ width }) => width}px; */
 `
 
 export const StyledNextButton = styled(NextButton)`

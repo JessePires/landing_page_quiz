@@ -41,6 +41,7 @@ export const Logo = styled.img.attrs({
   draggable: false,
 })`
   height: 150px;
+  width: auto;
 
   @media (max-width: 480px) {
     height: 100px;

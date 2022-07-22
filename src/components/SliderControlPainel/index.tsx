@@ -48,7 +48,7 @@ const SliderControlPainel: React.FC = () => {
     Faq,
     ClassDetails,
   ]
-
+  console.log({ Class })
   return (
     <Container>
       <SliderContainer>
