@@ -21,6 +21,7 @@ const Smartphone: React.FC<SmartphoneProps> = ({
     <Speaker />
     <Volume />
     <Screen
+      priority
       placeholder="blur"
       width={width - 15}
       height={height - 15}

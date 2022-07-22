@@ -48,7 +48,6 @@ const SliderControlPainel: React.FC = () => {
     Faq,
     ClassDetails,
   ]
-  console.log({ Class })
   return (
     <Container>
       <SliderContainer>
@@ -85,6 +84,7 @@ const SliderControlPainel: React.FC = () => {
               <ContentSlider>
                 <ImageWrapper>
                   <Image
+                    priority
                     placeholder="blur"
                     alt="Imagens do Painel de Controle"
                     src={item}
