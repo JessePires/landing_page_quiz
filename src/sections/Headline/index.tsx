@@ -22,8 +22,8 @@ import {
 import { Smartphone } from '../../components'
 
 // Assets
-import Initial from '../../assets/mobile_screenshots/initial.png'
-import Avatar from '../../assets/mobile_screenshots/avatar.png'
+import Initial from '../../assets/mobile_screenshots/initial.webp'
+import Avatar from '../../assets/mobile_screenshots/avatar.webp'
 
 const Headline: React.FC = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 1150px)' })
