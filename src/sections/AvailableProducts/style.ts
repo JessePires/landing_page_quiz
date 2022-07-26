@@ -4,9 +4,14 @@ export const Section = styled.section`
   overflow-x: hidden;
   /* height: 839px; */
   padding-top: 100px;
+  padding-bottom: 100px;
 
   @media (max-width: 1150px) {
     padding: 100px 30px;
+  }
+
+  @media (max-width: 550px) {
+    padding-bottom: 30px;
   }
 
   display: flex;

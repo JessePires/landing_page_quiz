@@ -11,12 +11,16 @@ export const Section = styled.section`
   background-size: cover;
   background-position: center;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   margin-top: -7px;
 
   @media (max-width: 1150px) {
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  @media (max-width: 550px) {
+    padding-bottom: 50px;
   }
 
   display: flex;
