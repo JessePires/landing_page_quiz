@@ -44,7 +44,7 @@ export const Body = styled.div`
 
 export const AuthorWrapper = styled(motion.div)`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 30px;
   height: 100%;
 
