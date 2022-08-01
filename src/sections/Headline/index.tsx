@@ -49,7 +49,7 @@ const Headline: React.FC = () => {
                   Módulos
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('WhoItIsIndicated')}>
-                  Alvos
+                  Público Alvo
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('ControlPainel')}>
                   Painel de Controle
