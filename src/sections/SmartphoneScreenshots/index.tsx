@@ -17,7 +17,7 @@ const SmartphoneScreenshots: React.FC = () => {
   return (
     <Element name="SmartphoneScreenshots">
       <Section>
-        <Title>Aplicativo de SmartPhone</Title>
+        <Title>Aplicativo Móvel</Title>
         {!isMobile && (
           <>
             <Description>

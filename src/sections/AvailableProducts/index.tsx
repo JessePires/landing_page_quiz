@@ -27,7 +27,7 @@ const AvailableProducts: React.FC = () => {
   return (
     <Element name="AvailableProducts">
       <Section>
-        <Title>Artefatos Disponíveis</Title>
+        <Title>Módulos Disponíveis</Title>
         <Description>Veja abaixo as ferramentas desenvolvidas que</Description>
         <Description>
           disponibilizamos de <RevertColor>forma gratuita.</RevertColor>

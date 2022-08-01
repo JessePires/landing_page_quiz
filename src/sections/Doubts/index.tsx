@@ -25,7 +25,7 @@ const Doubts: React.FC = () => {
   return (
     <Element name="Doubts">
       <Section>
-        <Title>Dúvidas?</Title>
+        <Title>Contato</Title>
         <Description>Ficou interessado? Quer mais informaçõe?</Description>
         <Description>Entre em contato conosco...</Description>
 
@@ -69,9 +69,8 @@ const Doubts: React.FC = () => {
             }}
           >
             <NormalText>
-              Caso sua instituição <RevertColor>possua</RevertColor> um técnico
-              de informática, informe para o mesmo seguir as instruções clicando
-              em:
+              Caso sua instituição <RevertColor>não possua</RevertColor> um
+              técnico de informática, entre em contato conosco:
             </NormalText>
 
             <StyledButton href="mailto:quizutfpr@gmail.com">

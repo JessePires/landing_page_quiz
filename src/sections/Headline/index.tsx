@@ -46,7 +46,7 @@ const Headline: React.FC = () => {
             {!isTablet && (
               <>
                 <NavbarLink onClick={() => scrollTo('AvailableProducts')}>
-                  Artefatos
+                  Módulos
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('WhoItIsIndicated')}>
                   Alvos
@@ -55,13 +55,13 @@ const Headline: React.FC = () => {
                   Painel de Controle
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('SmartphoneScreenshots')}>
-                  App Smartphone
+                  App. Móvel
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('FuturePlans')}>
                   Planos
                 </NavbarLink>
                 <NavbarLink onClick={() => scrollTo('Doubts')}>
-                  Dúvidas
+                  Quero usar!
                 </NavbarLink>
               </>
             )}
@@ -70,7 +70,7 @@ const Headline: React.FC = () => {
               rel="noopener noreferrer"
               href="https://docsquizutfpr.netlify.app/"
             >
-              Técnico
+              Documentação
             </NavbarDocumentationLink>
           </Navbar>
         </Header>
@@ -123,11 +123,10 @@ const Headline: React.FC = () => {
             </WelcomeText>
             <Title>Totalmente gratuito e customizável!</Title>
             <Description>
-              O projeto é uma plataforma web e móvel para criação e análise de
-              avaliações digitais. O sistema está sendo criado sob orientação
-              dos professores Juliano Henrique Foleis e Marcos Silvano Almeida.
-              O mesmo é composto por um painel de controle utilizado para
-              criação de quizzes, bem como um aplicativo móvel gamificado para
+              O Quiz UTFPR é uma plataforma web e móvel para criação e análise
+              de avaliações digitais. A plataforma é composta por um painel de
+              controle utilizado para criação de quizzes e acompanhamento da
+              evolução dos alunos, bem como um aplicativo móvel gamificado para
               que os alunos possam acessá-los e respondê-los.
             </Description>
 
