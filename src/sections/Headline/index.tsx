@@ -118,9 +118,7 @@ const Headline: React.FC = () => {
               once: false,
             }}
           >
-            <WelcomeText>
-              Seja bem-vindo ao projeto do Quiz Gamificado.
-            </WelcomeText>
+            <WelcomeText>Seja bem-vindo ao projeto do Quiz UTFPR.</WelcomeText>
             <Title>Totalmente gratuito e customizável!</Title>
             <Description>
               O Quiz UTFPR é uma plataforma web e móvel para criação e análise

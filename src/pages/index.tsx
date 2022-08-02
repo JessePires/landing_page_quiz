@@ -29,7 +29,7 @@ const FooterSection = dynamic(() => import('../sections/Footer'))
 const AboutSection = dynamic(() => import('../sections/About'))
 
 const Home: React.FC = () => {
-  const title = 'Quiz Gamificado UTFPR'
+  const title = 'Quiz UTFPR'
   const description =
     'Plataforma web e móvel para criação e análise de avaliações digitais.'
   const previewImage = 'https://docsquizutfpr.netlify.app/img/capa.png'
