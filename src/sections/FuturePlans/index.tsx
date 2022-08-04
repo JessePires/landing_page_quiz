@@ -21,7 +21,7 @@ import {
 const FuturePlans: React.FC = () => (
   <Element name="FuturePlans">
     <Section>
-      <Title>Planos Futuros</Title>
+      <Title>Funcionalidades Futuras</Title>
       <Description>
         Veja abaixo as funcionalidades que pretendemos adicionar.{' '}
         <RevertColor>Vem coisa boa por aí!</RevertColor>
