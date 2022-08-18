@@ -49,7 +49,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 # Clone este repositório
 $ git clone https://github.com/JessePires/landing_page_quiz.git
 # Acesse a pasta do projeto no terminal/cmd
-$ cd refresh_token
+$ cd landing_page_quiz
 # Instale as dependências
 # via npm
 $ npm install
